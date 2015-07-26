@@ -45,6 +45,9 @@
 		 <!--[if lt IE 9]>
 	        <script src="<?php echo get_template_directory_uri() ?>/js/vendor/html5-3.6-respond-1.1.0.min.js"></script>
     <![endif]-->	
+	
+	<script type="text/javascript" defer="defer" src="https://mylivechat.com/chatinline.aspx?hccid=37751473"></script>
+	
 </head>
 <body <?php body_class(); ?>>
 <!--[if lt IE 8]>
