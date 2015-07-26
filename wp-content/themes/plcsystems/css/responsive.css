@@ -1,0 +1,48 @@
+/*================Responsive CSS===============*/
+
+@media screen and (max-width: 767px){
+	.latest-news .container > .row {
+	    max-width: none;
+	    float: none;
+	}
+	.blog {
+	    text-align: center;
+	}
+	.blog .latest-image {
+	    margin: auto;
+	}
+}
+@media screen and (max-width: 633px){
+	.home-tagline .container {
+	    margin: 0px auto;
+	}
+}
+@media screen and (max-width: 580px){
+	.copyrights {
+	    width: 100%;
+	    text-align: center;
+	}
+	.social-media {
+	    text-align: center;
+	    width: 100%;
+	}
+	#footer p {
+		line-height: 40px;
+	}
+	#footer a {
+	    line-height: 40px;
+	}
+	footer#footer {
+	    background-color: #333333;
+	    min-height: 0px;
+	    margin-bottom: 0px;
+	    padding: 10px 0;
+	}
+}
+
+@media screen and (max-width: 480px){
+	.blog{
+		width: 100%;
+	}
+}
+

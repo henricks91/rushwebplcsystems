@@ -1,0 +1,205 @@
+/*
+Theme Name: PLCSystems Custom Theme
+Theme URI: http://www.rushwebservices.com
+Author: Henry Pausal
+Author URI: http://www.rushwebservices.com
+Description: Reponsive theme using the unsemantic grid system.
+Version: 1.1
+*/
+
+/* =Reset CSS (v2.0)
+-------------------------------------------------------------- */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, img, ins, kbd, q, s, samp, small, strike, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+  margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+body{
+	  background: #fff;
+    font-family: Helvetica, arial, sans-serif;
+}
+/*===========FONT STYLES============*/
+a {
+  color: #0072ff;
+  text-decoration: none;
+  font-family: Helvetica, arial, sans-serif;
+}
+a:hover{
+  color: #7f1232;
+}
+p, li{
+  font-family: Helvetica, arial, sans-serif;
+  font-size: 14px;
+  color: #8f8f8f;
+  line-height: 36px;
+}
+h1{
+	font-size: 36px;
+	color: #009798;
+	font-family: Helvetica, arial, sans-serif;
+}
+h2{
+  font-size: 23px;
+  color: #009798;
+  font-family: Helvetica, arial, sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+h3{
+  font-size: 18px;
+  color: #009798;
+  font-family: Helvetica, arial, sans-serif;
+  font-weight: bold;
+}
+
+
+/*============HEADER============*/
+div#logo {
+  margin-bottom: 10px;
+  margin-top: 36px;
+}
+.nav>li {
+  position: relative;
+  display: inline-block;
+}
+.nav{
+  text-align: right;
+}
+.nav>li>a {
+  padding: 92px 25px 15px;
+  color: #8f8f8f;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.nav>li>a:hover {
+  color: #fff;
+  background: url('images/menu-hover-bg.jpg');
+  background-size: 100% auto;
+}
+/*=========HOMEPAGE========*/
+.main-banner .ls-layer.ls-animating img {
+  width: 100%;
+  max-width: 100%;
+}
+.main-banner .ls-container {
+  width: 100%;
+  padding: 0px;
+}
+.home-tagline .container{
+  background: url(images/bottom-latest-bg.jpg);
+  max-width: 1140px;
+  height: 196px;
+  display: table;
+  margin: 45px auto;
+}
+.home-tagline .container p {
+  font-size: 23px;
+  color: #fff;
+  text-align: center;
+  vertical-align: middle;
+  display: table-cell;
+}
+.about-company-text {
+  text-align: center;
+  margin-top: 85px;
+  margin-bottom: 30px;
+}
+.about-button{
+  margin-top: 22px;
+  display: inline-block;
+}
+.latest-news h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.latest-image img {
+  max-width: 230px;
+  height: auto;
+  margin-left: -50px;
+}
+.latest-news .container > .row {
+  max-width: 95%;
+  float: right;
+}
+p.date {
+  color: #0072ff;
+  font-size: 14px;
+}
+.latest-news {
+  background-color: #dddddd;
+  padding: 35px 0 60px;
+}
+.blog .latest-image {
+  padding-left: 0px;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0px 6px 15px #373737;
+  -moz-box-shadow: 0px 6px 15px #373737;
+  -webkit-box-shadow: 0px 6px 15px #373737;
+}
+.blog:nth-child(even) .latest-image {
+  padding-left: 0px;
+}
+.blog:nth-child(odd) .latest-image {
+  padding-right: 0px;
+}
+.blog .description p {
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+.content-area {
+    margin: 30px auto;
+}
+.fullwidth article.post h1 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+/*=========FOOTER========*/
+footer#footer {
+  background-color: #333333;
+  min-height: 90px;
+  margin-bottom: 30px;
+}
+#footer p{
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 90px;
+}
+#footer a{
+  line-height: 90px;
+}
+.social-media{
+  text-align: right;
+}
+.circle {
+  border-radius: 50%;
+  width: 31px;
+  font-size: 19px;
+  height: 31px;
+  text-align: center;
+  line-height: 33px;
+}
+.fa-facebook{
+  color: #fff;
+  background: #2154b1;
+}
+.fa-twitter{
+  color: #fff;
+  background: #38cdff;
+}
+.fa-rss{
+  color: #fff;
+  background: #f9991f;
+}
+.fa-google-plus{
+  color: #fff;
+  background: #000000;
+}
