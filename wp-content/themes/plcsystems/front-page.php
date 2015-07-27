@@ -11,10 +11,12 @@ get_header(); ?>
 
 	<div class="about-company-text">
 		<div class="container">
-			<h2>About Our Company</h2>
+			<h2><?php $_about_company = get_field( 'about_our_company', $post->ID); 	?>
+                <?php echo $_about_company ?>
+			</h2>
 			<div class="about-description">
-				<p>PLC Systems Technik, inc. the world's largest company dedicated to industrial automation and information, makes its customers more productive and the world more sustainable. Throughout the world, our product brands are recognized for innovation and excellence.</p>
-				<a href="" class="about-button"><img src="<?php bloginfo("template_directory"); ?>/images/about-home-button.png"></a>
+				<?php $_about_desc = get_field( 'company_description', $post->ID); 	?>
+                <?php echo $_about_desc ?>
 			</div>
 		</div>
 	</div><!--End of main tagline-->
