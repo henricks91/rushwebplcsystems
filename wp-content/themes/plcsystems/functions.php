@@ -19,7 +19,23 @@
 		}
 		*/
 	}
-
+	
+	// add theme options start
+	
+	function themeoptions_admin_menu()
+	{
+		// here's where we add our theme options page link to the dashboard sidebar
+		add_theme_page("Theme Options", "Theme Options", 'edit_themes', basename(__FILE__), 'themeoptions_page');
+	}
+	 
+	function themeoptions_page()
+	{
+		// here is the main function that will generate our options page
+	}
+	 
+	add_action('admin_menu', 'themeoptions_admin_menu');
+	// add theme options end
+	
 	//add menus
 	register_nav_menus(array(
 		"main-nav" => __("Main Menu"),
