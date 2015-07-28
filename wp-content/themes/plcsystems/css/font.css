@@ -1,10 +1,9 @@
 @font-face{
   font-family:'proxima-nova';
-  src: url('/wp-content/themes/plcsystems/fonts/proxima-nova/Proxima Nova Reg.otf'); /* everyone else take this */
-  src: url('/wp-content/themes/plcsystems/fonts/proxima-nova/proxima_nova_reg-webfont.eot');
-  src: url('/wp-content/themes/plcsystems/fonts/proxima-nova/proxima_nova_reg-webfont.eot?#iefix') format('embedded-opentype'),
-       url('/wp-content/themes/plcsystems/fonts/proxima-nova/proxima_nova_reg-webfont.woff2') format('woff2'),
-       url('/wp-content/themes/plcsystems/fonts/proxima-nova/proxima_nova_reg-webfont.woff') format('woff'),
-       url('/wp-content/themes/plcsystems/fonts/proxima-nova/proxima_nova_reg-webfont.ttf') format('truetype'),
-       url('/wp-content/themes/plcsystems/fonts/proxima-nova/proxima_nova_reg-webfont.svg#proxima_nova_rgregular') format('svg');
+  src: url('fonts/proxima-nova/proxima_nova_reg-webfont.eot');
+  src: url('fonts/proxima-nova/proxima_nova_reg-webfont.eot?#iefix') format('embedded-opentype'),
+       url('fonts/proxima-nova/proxima_nova_reg-webfont.woff2') format('woff2'),
+       url('fonts/proxima-nova/proxima_nova_reg-webfont.woff') format('woff'),
+       url('fonts/proxima-nova/proxima_nova_reg-webfont.ttf') format('truetype'),
+       url('fonts/proxima-nova/proxima_nova_reg-webfont.svg#proxima_nova_rgregular') format('svg');
 }
