@@ -28,8 +28,8 @@ get_header(); ?>
 				<!-- start loop -->
 			<?php
 				$args =  array('&post_type' => 'post', '&posts_per_page' => 2, '&post_status' => '&publish','&meta_query' => array( array( 'key' => '_is_featured_news','&value' => '1' )));
-				$blog = new WP_Query($args);
-				if ($blog->have_posts()) : while ($blog->have_posts()) : $blog->the_post();
+				$news = new WP_Query($args);
+				if ($news->have_posts()) : while ($news->have_posts()) : $news->the_post();
 						if (has_post_thumbnail()) {
 							$thumbnail_id = get_post_thumbnail_id(get_the_ID());
 							$thumbnail = wp_get_attachment_image_src($thumbnail_id, 'full');
@@ -59,8 +59,8 @@ get_header(); ?>
 
 	<div class="home-tagline">
 		<div class="container">
-			<p>We design, develop, install, program, integrate equipment<br />
-with the latest models of Programmable logic controllers.</p>
+			<?php $_tagline = get_field( '_plc_tagline', $post->ID); 	?>
+            <?php echo $_tagline ?>
 		</div>
 	</div>
 	

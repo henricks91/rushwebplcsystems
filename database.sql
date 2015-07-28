@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Jul 28, 2015 at 04:14 PM
+-- Generation Time: Jul 28, 2015 at 04:36 PM
 -- Server version: 5.5.8
 -- PHP Version: 5.3.5
 
@@ -299,7 +299,7 @@ CREATE TABLE IF NOT EXISTS `wp_postmeta` (
   PRIMARY KEY (`meta_id`),
   KEY `post_id` (`post_id`),
   KEY `meta_key` (`meta_key`(191))
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8mb4 AUTO_INCREMENT=134 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8mb4 AUTO_INCREMENT=148 ;
 
 --
 -- Dumping data for table `wp_postmeta`
@@ -311,7 +311,7 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (3, 2, '_wp_trash_meta_time', '1436692009'),
 (4, 5, '_edit_last', '1'),
 (5, 5, '_wp_page_template', 'front-page.php'),
-(6, 5, '_edit_lock', '1438011569:1'),
+(6, 5, '_edit_lock', '1438093879:1'),
 (7, 7, '_edit_last', '1'),
 (8, 7, '_edit_lock', '1437893502:1'),
 (9, 7, '_wp_page_template', 'page-fullwidth.php'),
@@ -361,7 +361,7 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (58, 22, 'position', 'normal'),
 (59, 22, 'layout', 'no_box'),
 (60, 22, 'hide_on_screen', ''),
-(61, 22, '_edit_lock', '1438084680:1'),
+(61, 22, '_edit_lock', '1438094028:1'),
 (63, 23, 'about_our_company', 'About Our Company'),
 (64, 23, '_about_our_company', 'field_55b647b5c4666'),
 (65, 23, 'company_description', ''),
@@ -389,14 +389,13 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (91, 28, '_edit_lock', '1438088703:1'),
 (92, 30, '_edit_last', '1'),
 (93, 30, '_edit_lock', '1438086102:1'),
-(94, 22, 'field_55b76e3b4cb85', 'a:11:{s:3:"key";s:19:"field_55b76e3b4cb85";s:5:"label";s:11:"Latest News";s:4:"name";s:12:"_latest_news";s:4:"type";s:7:"wysiwyg";s:12:"instructions";s:0:"";s:8:"required";s:1:"0";s:13:"default_value";s:0:"";s:7:"toolbar";s:4:"full";s:12:"media_upload";s:3:"yes";s:17:"conditional_logic";a:3:{s:6:"status";s:1:"0";s:5:"rules";a:1:{i:0;a:2:{s:5:"field";s:4:"null";s:8:"operator";s:2:"==";}}s:8:"allorany";s:3:"all";}s:8:"order_no";i:2;}'),
-(95, 22, 'rule', 'a:5:{s:5:"param";s:4:"page";s:8:"operator";s:2:"==";s:5:"value";s:1:"5";s:8:"order_no";i:0;s:8:"group_no";i:0;}'),
+(94, 22, 'field_55b76e3b4cb85', 'a:11:{s:3:"key";s:19:"field_55b76e3b4cb85";s:5:"label";s:11:"Latest News";s:4:"name";s:12:"_latest_news";s:4:"type";s:7:"wysiwyg";s:12:"instructions";s:0:"";s:8:"required";s:1:"0";s:13:"default_value";s:0:"";s:7:"toolbar";s:4:"full";s:12:"media_upload";s:3:"yes";s:17:"conditional_logic";a:3:{s:6:"status";s:1:"0";s:5:"rules";a:1:{i:0;a:3:{s:5:"field";s:4:"null";s:8:"operator";s:2:"==";s:5:"value";s:0:"";}}s:8:"allorany";s:3:"all";}s:8:"order_no";i:2;}'),
 (96, 32, '_edit_last', '1'),
 (97, 32, 'field_55b76ee4e4221', 'a:10:{s:3:"key";s:19:"field_55b76ee4e4221";s:5:"label";s:13:"Featured News";s:4:"name";s:17:"_is_featured_news";s:4:"type";s:10:"true_false";s:12:"instructions";s:92:"If you set this to featured then it will show on every page. Latest 3 featured will be shown";s:8:"required";s:1:"0";s:7:"message";s:0:"";s:13:"default_value";s:1:"0";s:17:"conditional_logic";a:3:{s:6:"status";s:1:"0";s:5:"rules";a:1:{i:0;a:3:{s:5:"field";s:4:"null";s:8:"operator";s:2:"==";s:5:"value";s:0:"";}}s:8:"allorany";s:3:"all";}s:8:"order_no";i:0;}'),
 (99, 32, 'position', 'normal'),
 (100, 32, 'layout', 'no_box'),
 (101, 32, 'hide_on_screen', ''),
-(102, 32, '_edit_lock', '1438091137:1'),
+(102, 32, '_edit_lock', '1438093758:1'),
 (103, 1, '_edit_lock', '1438089535:1'),
 (104, 33, '_edit_last', '1'),
 (105, 33, '_edit_lock', '1438086717:1'),
@@ -424,7 +423,21 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (130, 41, '__is_featured_news', 'field_55b76ee4e4221'),
 (131, 39, '_is_featured_news', '0'),
 (132, 39, '__is_featured_news', 'field_55b76ee4e4221'),
-(133, 32, 'rule', 'a:5:{s:5:"param";s:9:"post_type";s:8:"operator";s:2:"==";s:5:"value";s:4:"post";s:8:"order_no";i:0;s:8:"group_no";i:0;}');
+(133, 32, 'rule', 'a:5:{s:5:"param";s:9:"post_type";s:8:"operator";s:2:"==";s:5:"value";s:4:"post";s:8:"order_no";i:0;s:8:"group_no";i:0;}'),
+(134, 22, 'field_55b7925b7d2db', 'a:11:{s:3:"key";s:19:"field_55b7925b7d2db";s:5:"label";s:7:"Tagline";s:4:"name";s:12:"_plc_tagline";s:4:"type";s:7:"wysiwyg";s:12:"instructions";s:0:"";s:8:"required";s:1:"0";s:13:"default_value";s:0:"";s:7:"toolbar";s:4:"full";s:12:"media_upload";s:3:"yes";s:17:"conditional_logic";a:3:{s:6:"status";s:1:"0";s:5:"rules";a:1:{i:0;a:2:{s:5:"field";s:4:"null";s:8:"operator";s:2:"==";}}s:8:"allorany";s:3:"all";}s:8:"order_no";i:3;}'),
+(135, 22, 'rule', 'a:5:{s:5:"param";s:4:"page";s:8:"operator";s:2:"==";s:5:"value";s:1:"5";s:8:"order_no";i:0;s:8:"group_no";i:0;}'),
+(136, 42, 'about_our_company', 'About Our Company'),
+(137, 42, '_about_our_company', 'field_55b647b5c4666'),
+(138, 42, 'company_description', 'PLC Systems Technik, inc. the world''s largest company dedicated to industrial automation and information, makes its customers more productive and the world more sustainable. Throughout the world, our product brands are recognized for innovation and excellence.\r\n\r\n<a href="http://localhost/rushwebplcsystems/">Read More</a>\r\n\r\n&nbsp;'),
+(139, 42, '_company_description', 'field_55b647e6c4667'),
+(140, 42, '_latest_news', ''),
+(141, 42, '__latest_news', 'field_55b76e3b4cb85'),
+(142, 42, '_plc_tagline', 'We design, develop, install, program, integrate equipment with the latest models of Programmable logic controllers.'),
+(143, 42, '__plc_tagline', 'field_55b7925b7d2db'),
+(144, 5, '_latest_news', ''),
+(145, 5, '__latest_news', 'field_55b76e3b4cb85'),
+(146, 5, '_plc_tagline', 'We design, develop, install, program, integrate equipment with the latest models of Programmable logic controllers.'),
+(147, 5, '__plc_tagline', 'field_55b7925b7d2db');
 
 -- --------------------------------------------------------
 
@@ -462,7 +475,7 @@ CREATE TABLE IF NOT EXISTS `wp_posts` (
   KEY `type_status_date` (`post_type`,`post_status`,`post_date`,`ID`),
   KEY `post_parent` (`post_parent`),
   KEY `post_author` (`post_author`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8mb4 AUTO_INCREMENT=42 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8mb4 AUTO_INCREMENT=43 ;
 
 --
 -- Dumping data for table `wp_posts`
@@ -472,7 +485,7 @@ INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post
 (1, 1, '2015-07-12 08:04:36', '2015-07-12 08:04:36', 'Welcome to WordPress. This is your first post. Edit or delete it, then start blogging!', 'Hello world!', '', 'trash', 'open', 'open', '', 'hello-world', '', '', '2015-07-28 13:21:19', '2015-07-28 13:21:19', '', 0, 'http://localhost/plcsystems/?p=1', 0, 'post', '', 1),
 (2, 1, '2015-07-12 08:04:36', '2015-07-12 08:04:36', 'This is an example page. It''s different from a blog post because it will stay in one place and will show up in your site navigation (in most themes). Most people start with an About page that introduces them to potential site visitors. It might say something like this:\n\n<blockquote>Hi there! I''m a bike messenger by day, aspiring actor by night, and this is my blog. I live in Los Angeles, have a great dog named Jack, and I like pi&#241;a coladas. (And gettin'' caught in the rain.)</blockquote>\n\n...or something like this:\n\n<blockquote>The XYZ Doohickey Company was founded in 1971, and has been providing quality doohickeys to the public ever since. Located in Gotham City, XYZ employs over 2,000 people and does all kinds of awesome things for the Gotham community.</blockquote>\n\nAs a new WordPress user, you should go to <a href="http://localhost/plcsystems/wp-admin/">your dashboard</a> to delete this page and create new pages for your content. Have fun!', 'Sample Page', '', 'trash', 'open', 'open', '', 'sample-page', '', '', '2015-07-12 09:06:49', '2015-07-12 09:06:49', '', 0, 'http://localhost/plcsystems/?page_id=2', 0, 'page', '', 0),
 (4, 1, '2015-07-12 09:06:49', '2015-07-12 09:06:49', 'This is an example page. It''s different from a blog post because it will stay in one place and will show up in your site navigation (in most themes). Most people start with an About page that introduces them to potential site visitors. It might say something like this:\n\n<blockquote>Hi there! I''m a bike messenger by day, aspiring actor by night, and this is my blog. I live in Los Angeles, have a great dog named Jack, and I like pi&#241;a coladas. (And gettin'' caught in the rain.)</blockquote>\n\n...or something like this:\n\n<blockquote>The XYZ Doohickey Company was founded in 1971, and has been providing quality doohickeys to the public ever since. Located in Gotham City, XYZ employs over 2,000 people and does all kinds of awesome things for the Gotham community.</blockquote>\n\nAs a new WordPress user, you should go to <a href="http://localhost/plcsystems/wp-admin/">your dashboard</a> to delete this page and create new pages for your content. Have fun!', 'Sample Page', '', 'inherit', 'open', 'open', '', '2-revision-v1', '', '', '2015-07-12 09:06:49', '2015-07-12 09:06:49', '', 2, 'http://localhost/plcsystems/2015/07/12/2-revision-v1/', 0, 'revision', '', 0),
-(5, 1, '2015-07-12 09:07:08', '2015-07-12 09:07:08', '', 'Home', '', 'publish', 'open', 'open', '', 'home', '', '', '2015-07-27 15:30:04', '2015-07-27 15:30:04', '', 0, 'http://localhost/plcsystems/?page_id=5', 0, 'page', '', 0),
+(5, 1, '2015-07-12 09:07:08', '2015-07-12 09:07:08', '', 'Home', '', 'publish', 'open', 'open', '', 'home', '', '', '2015-07-28 14:33:13', '2015-07-28 14:33:13', '', 0, 'http://localhost/plcsystems/?page_id=5', 0, 'page', '', 0),
 (6, 1, '2015-07-12 09:07:08', '2015-07-12 09:07:08', '', 'Home', '', 'inherit', 'open', 'open', '', '5-revision-v1', '', '', '2015-07-12 09:07:08', '2015-07-12 09:07:08', '', 5, 'http://localhost/plcsystems/2015/07/12/5-revision-v1/', 0, 'revision', '', 0),
 (7, 1, '2015-07-12 09:07:32', '2015-07-12 09:07:32', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry''s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.', 'Our Company', '', 'publish', 'open', 'open', '', 'our-company', '', '', '2015-07-26 04:44:34', '2015-07-26 04:44:34', '', 0, 'http://localhost/plcsystems/?page_id=7', 0, 'page', '', 0),
 (8, 1, '2015-07-12 09:07:32', '2015-07-12 09:07:32', '', 'Our Company', '', 'inherit', 'open', 'open', '', '7-revision-v1', '', '', '2015-07-12 09:07:32', '2015-07-12 09:07:32', '', 7, 'http://localhost/plcsystems/2015/07/12/7-revision-v1/', 0, 'revision', '', 0),
@@ -488,7 +501,7 @@ INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post
 (19, 1, '2015-07-26 04:44:31', '2015-07-26 04:44:31', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry''s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.', 'Our Company', '', 'inherit', 'open', 'open', '', '7-autosave-v1', '', '', '2015-07-26 04:44:31', '2015-07-26 04:44:31', '', 7, 'http://localhost/plcsystems/2015/07/26/7-autosave-v1/', 0, 'revision', '', 0),
 (20, 1, '2015-07-26 04:44:34', '2015-07-26 04:44:34', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry''s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.', 'Our Company', '', 'inherit', 'open', 'open', '', '7-revision-v1', '', '', '2015-07-26 04:44:34', '2015-07-26 04:44:34', '', 7, 'http://localhost/plcsystems/2015/07/26/7-revision-v1/', 0, 'revision', '', 0),
 (21, 1, '2015-07-26 14:31:37', '0000-00-00 00:00:00', '', 'Auto Draft', '', 'auto-draft', 'open', 'open', '', '', '', '', '2015-07-26 14:31:37', '0000-00-00 00:00:00', '', 0, 'http://localhost/rushwebplcsystems/?p=21', 0, 'post', '', 0),
-(22, 1, '2015-07-27 15:03:02', '2015-07-27 15:03:02', '', 'Homepage', '', 'publish', 'closed', 'closed', '', 'acf_homepage', '', '', '2015-07-28 11:58:18', '2015-07-28 11:58:18', '', 0, 'http://localhost/rushwebplcsystems/?post_type=acf&#038;p=22', 0, 'acf', '', 0),
+(22, 1, '2015-07-27 15:03:02', '2015-07-27 15:03:02', '', 'Homepage', '', 'publish', 'closed', 'closed', '', 'acf_homepage', '', '', '2015-07-28 14:32:19', '2015-07-28 14:32:19', '', 0, 'http://localhost/rushwebplcsystems/?post_type=acf&#038;p=22', 0, 'acf', '', 0),
 (23, 1, '2015-07-27 15:13:34', '2015-07-27 15:13:34', '', 'Home', '', 'inherit', 'open', 'open', '', '5-revision-v1', '', '', '2015-07-27 15:13:34', '2015-07-27 15:13:34', '', 5, 'http://localhost/rushwebplcsystems/5-revision-v1/', 0, 'revision', '', 0),
 (24, 1, '2015-07-27 15:17:26', '0000-00-00 00:00:00', '', 'Auto Draft', '', 'auto-draft', 'open', 'open', '', '', '', '', '2015-07-27 15:17:26', '0000-00-00 00:00:00', '', 0, 'http://localhost/rushwebplcsystems/?post_type=acf&p=24', 0, 'acf', '', 0),
 (25, 1, '2015-07-27 15:19:00', '2015-07-27 15:19:00', '', 'Theme Option', '', 'publish', 'closed', 'closed', '', 'acf_theme-option', '', '', '2015-07-27 15:24:30', '2015-07-27 15:24:30', '', 0, 'http://localhost/rushwebplcsystems/?post_type=acf&#038;p=25', 0, 'acf', '', 0),
@@ -507,7 +520,8 @@ INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post
 (38, 1, '2015-07-28 13:22:33', '2015-07-28 13:22:33', '', 'post-1', '', 'inherit', 'open', 'open', '', 'post-1', '', '', '2015-07-28 13:22:33', '2015-07-28 13:22:33', '', 36, 'http://localhost/rushwebplcsystems/wp-content/uploads/2015/07/post-1.jpg', 0, 'attachment', 'image/jpeg', 0),
 (39, 1, '2015-07-28 13:23:04', '2015-07-28 13:23:04', 'This is a sample post. To be replaced by the words of your choice. This is a sample post. To be replaced by the words of your choice. This is a sample post. To be replaced by the words of your choice.\r\n\r\nThis is a sample post. To be replaced by the words of your choice. This is a sample post. To be replaced by the words of your choice.', 'Sample News 2', '', 'publish', 'open', 'open', '', 'sample-news-2', '', '', '2015-07-28 13:23:04', '2015-07-28 13:23:04', '', 0, 'http://localhost/rushwebplcsystems/?p=39', 0, 'post', '', 0),
 (40, 1, '2015-07-28 13:23:00', '2015-07-28 13:23:00', '', 'post-2', '', 'inherit', 'open', 'open', '', 'post-2', '', '', '2015-07-28 13:23:00', '2015-07-28 13:23:00', '', 39, 'http://localhost/rushwebplcsystems/wp-content/uploads/2015/07/post-2.jpg', 0, 'attachment', 'image/jpeg', 0),
-(41, 1, '2015-07-28 13:23:04', '2015-07-28 13:23:04', 'This is a sample post. To be replaced by the words of your choice. This is a sample post. To be replaced by the words of your choice. This is a sample post. To be replaced by the words of your choice.\r\n\r\nThis is a sample post. To be replaced by the words of your choice. This is a sample post. To be replaced by the words of your choice.', 'Sample News 2', '', 'inherit', 'open', 'open', '', '39-revision-v1', '', '', '2015-07-28 13:23:04', '2015-07-28 13:23:04', '', 39, 'http://localhost/rushwebplcsystems/39-revision-v1/', 0, 'revision', '', 0);
+(41, 1, '2015-07-28 13:23:04', '2015-07-28 13:23:04', 'This is a sample post. To be replaced by the words of your choice. This is a sample post. To be replaced by the words of your choice. This is a sample post. To be replaced by the words of your choice.\r\n\r\nThis is a sample post. To be replaced by the words of your choice. This is a sample post. To be replaced by the words of your choice.', 'Sample News 2', '', 'inherit', 'open', 'open', '', '39-revision-v1', '', '', '2015-07-28 13:23:04', '2015-07-28 13:23:04', '', 39, 'http://localhost/rushwebplcsystems/39-revision-v1/', 0, 'revision', '', 0),
+(42, 1, '2015-07-28 14:33:13', '2015-07-28 14:33:13', '', 'Home', '', 'inherit', 'open', 'open', '', '5-revision-v1', '', '', '2015-07-28 14:33:13', '2015-07-28 14:33:13', '', 5, 'http://localhost/rushwebplcsystems/5-revision-v1/', 0, 'revision', '', 0);
 
 -- --------------------------------------------------------
 
