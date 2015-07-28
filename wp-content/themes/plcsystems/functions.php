@@ -62,71 +62,49 @@
 	}
 	add_action('admin_init','add_grav_forms');
 
-//########## Begin Customized Admin Stuff##########	
-		//use the editor style to customize the editor.
-		add_editor_style();
 		
-	
-		
-		//add the custom post types
-		//include("admin/.php");
-		
-		//add post thumbnail support and thumbnail sizes.
-		//add_theme_support("post-thumbnails", array());
-	//########## End Customized Admin Stuff##########
-	
-	/*##########USEFUL FUNCTIONS############
-		//adds last-child and first-child classes to the menu
-		add_filter("wp_nav_menu", "add_first_and_last");
-		function add_first_and_last($output) {
-			$output = preg_replace('/class="menu-item/', 'class="first-child menu-item', $output, 1);
-			$output = substr_replace($output, 'class="last-child menu-item', strripos($output, 'class="menu-item'), strlen('class="menu-item'));
-			return $output;
-		}
-		*/
-		
-		//create custom post types
-		add_action("init", "add_custom_post_types");
-		function add_custom_post_types() {
-			//the practice area type
-			$labels = array(
-				"name" => _x("News", "post type general name"),
-				"singular_name" => _x("News Area", "post type singular name"),
-				"add_new" => _x("Add New", "practice area"),
-				"add_new_item" => __("Add Latest News"),
-				"edit_item" => __("Edit News Item"),
-				"new_item" => __("New News Item"),
-				"all_items" => __("All News Items"),
-				"view_item" => __("View News Item"),
-				"search_items" => __("Search News Items"),
-				"not_found" =>  __("No news item found"),
-				"not_found_in_trash" => __("No news item found in Trash"), 
-				"parent_item_colon" => "",
-				"menu_name" => "News"
-			);
-			$args = array(
-				"labels" => $labels,
-				"description" => "",
-				"public" => true,
-				"rewrite" => array("slug"=>"news-area"),
-				"has_archive" => true, 
-				"menu_position" => 5,
-				"supports" => array("title","editor","revisions")
-			); 
-			register_post_type("news",$args);
-			register_taxonomy("news-categories","news", array(
-				"hierarchical" => true,
-				"label" => __("News Type"),
-				"query_var" => true,
-				"rewrite" => array("slug" => "news-type"),
-			));
-		}
+	//create custom post types
+	add_action("init", "add_custom_post_types");
+	function add_custom_post_types() {
+		//the practice area type
+		$labels = array(
+			"name" => _x("News", "post type general name"),
+			"singular_name" => _x("News Area", "post type singular name"),
+			"add_new" => _x("Add New", "practice area"),
+			"add_new_item" => __("Add Latest News"),
+			"edit_item" => __("Edit News Item"),
+			"new_item" => __("New News Item"),
+			"all_items" => __("All News Items"),
+			"view_item" => __("View News Item"),
+			"search_items" => __("Search News Items"),
+			"not_found" =>  __("No news item found"),
+			"not_found_in_trash" => __("No news item found in Trash"), 
+			"parent_item_colon" => "",
+			"menu_name" => "News"
+		);
+		$args = array(
+			"labels" => $labels,
+			"description" => "",
+			"public" => true,
+			"rewrite" => array("slug"=>"news-area"),
+			"has_archive" => true, 
+			"menu_position" => 5,
+			"supports" => array("title","editor","revisions")
+		); 
+		register_post_type("news",$args);
+		register_taxonomy("news-categories","news", array(
+			"hierarchical" => true,
+			"label" => __("News Type"),
+			"query_var" => true,
+			"rewrite" => array("slug" => "news-type"),
+		));
+	}
 		
 
 
 
 		//rename posts to products
-		add_action( 'init', 'change_post_object_label' );
+/*		add_action( 'init', 'change_post_object_label' );
 		add_action( 'admin_menu', 'change_post_menu_label' );
 		function change_post_menu_label() {
 			global $menu;
@@ -150,7 +128,7 @@
 			$labels->search_items = 'Search Solutions';
 			$labels->not_found = 'No Solutions found';
 			$labels->not_found_in_trash = 'No Solutions found in Trash';
-		}
+		}*/
 		
 /*============Adds Excerpt to Pages==========*/
 add_theme_support( 'post-thumbnails' ); 
