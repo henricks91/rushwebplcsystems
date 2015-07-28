@@ -25,27 +25,35 @@ get_header(); ?>
 		<div class="container">
 			<div class="row">
 				<h2>Latest News</h2>
+				<!-- start loop -->
+			<?php
+				$args =  array('&post_type' => 'post', '&posts_per_page' => 2, '&post_status' => '&publish','&meta_query' => array( array( 'key' => '_is_featured_news','&value' => '1' )));
+				$blog = new WP_Query($args);
+				if ($blog->have_posts()) : while ($blog->have_posts()) : $blog->the_post();
+						if (has_post_thumbnail()) {
+							$thumbnail_id = get_post_thumbnail_id(get_the_ID());
+							$thumbnail = wp_get_attachment_image_src($thumbnail_id, 'full');
+							$thumbnail_url = $thumbnail[0];
+						}
+            ?>
 				<div class="blog col-md-6 col-xs-6">
 					<div class="latest-image col-md-5">
-						<img src="<?php bloginfo("template_directory"); ?>/images/post-1.jpg">
+						<a href="<?php the_permalink() ?>" title="<?php the_title(); ?>"><img src="<?php echo $thumbnail_url; ?>" alt="Text_2" /></a>
 					</div>
 					<div class="description col-md-7">
-						<p>If you want to know the last news about us enter here.</p>
-						<p class="date">Dec. 15 2014</p>
+						<?php echo news_limit_characters(get_the_content(), 60) . '...'; ?>
+						<p class="date"><?php echo get_the_date(get_option('date_format')) ?></p>
 					</div>
 				</div>
-
-				<div class="blog col-md-6 col-xs-6">
-					<div class="latest-image col-md-5">
-						<img src="<?php bloginfo("template_directory"); ?>/images/post-1.jpg">
-					</div>
-					<div class="description col-md-7">
-						<p>If you want to know the last news about us enter here.</p>
-						<p class="date">Dec. 15 2014</p>
-					</div>
-				</div>
-
+					<?php $i++;
+                endwhile;
+            endif; ?>
+		<!-- end loop -->
 			</div>
+		<?php
+			wp_reset_query(); 
+		// end query
+		?>	
 		</div>
 	</div><!--End of latest news-->
 
@@ -55,9 +63,7 @@ get_header(); ?>
 with the latest models of Programmable logic controllers.</p>
 		</div>
 	</div>
-
 	
-
 	</div>
 </div><!--End of main content-->
 <?php get_footer(); ?>

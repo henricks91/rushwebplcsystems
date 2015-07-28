@@ -36,6 +36,20 @@
 	add_action('admin_menu', 'themeoptions_admin_menu');
 	// add theme options end
 	
+	// =========== JORDAN start =========
+	
+	function news_limit_characters($string, $limit, $break=" ", $pad="") {
+	  if(strlen($string) <= $limit) return $string;
+	  $string = substr(strip_tags( trim($string) ), 0, $limit);
+	  if(false !== ($breakpoint = strrpos($string, $break))) {
+		$string = substr($string, 0, $breakpoint);
+	  }
+
+	  return $string . $pad;
+	}
+	
+	// =========== JORDAN end =========
+	
 	//add menus
 	register_nav_menus(array(
 		"main-nav" => __("Main Menu"),
