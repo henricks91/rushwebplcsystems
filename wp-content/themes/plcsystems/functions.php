@@ -63,7 +63,7 @@
 	add_action('admin_init','add_grav_forms');
 
 		
-	//create custom post types
+/*	//create custom post types
 	add_action("init", "add_custom_post_types");
 	function add_custom_post_types() {
 		//the practice area type
@@ -98,37 +98,37 @@
 			"query_var" => true,
 			"rewrite" => array("slug" => "news-type"),
 		));
-	}
+	}*/
 		
 
 
 
 		//rename posts to products
-/*		add_action( 'init', 'change_post_object_label' );
+		add_action( 'init', 'change_post_object_label' );
 		add_action( 'admin_menu', 'change_post_menu_label' );
 		function change_post_menu_label() {
 			global $menu;
 			global $submenu;
-			$menu[5][0] = 'Solutions';
-			$submenu['edit.php'][5][0] = 'All Solutions';
-			$submenu['edit.php'][10][0] = 'Add a Solutions';
+			$menu[5][0] = 'News';
+			$submenu['edit.php'][5][0] = 'All News';
+			$submenu['edit.php'][10][0] = 'Add a News';
 			$submenu['edit.php'][15][0] = 'Categories'; // Change name for categories
 			unset($submenu['edit.php'][16][0]); // Change name for tags
 		}
 		function change_post_object_label() {
 			global $wp_post_types;
 			$labels = &$wp_post_types['post']->labels;
-			$labels->name = 'Solutions';
-			$labels->singular_name = 'Solutions';
-			$labels->add_new = 'Add Solutions';
-			$labels->add_new_item = 'Add Solutions';
-			$labels->edit_item = 'Edit Solutions';
-			$labels->new_item = 'Solutions';
-			$labels->view_item = 'View Solutions';
-			$labels->search_items = 'Search Solutions';
-			$labels->not_found = 'No Solutions found';
-			$labels->not_found_in_trash = 'No Solutions found in Trash';
-		}*/
+			$labels->name = 'News';
+			$labels->singular_name = 'News';
+			$labels->add_new = 'Add News';
+			$labels->add_new_item = 'Add News';
+			$labels->edit_item = 'Edit News';
+			$labels->new_item = 'News';
+			$labels->view_item = 'View News';
+			$labels->search_items = 'Search News';
+			$labels->not_found = 'No News found';
+			$labels->not_found_in_trash = 'No News found in Trash';
+		}
 		
 /*============Adds Excerpt to Pages==========*/
 add_theme_support( 'post-thumbnails' ); 
