@@ -7,7 +7,7 @@
 			<div class="credits">
 				<div class="row">
 					<div class="copyrights col-md-6 col-xs-8">
-						<p>Copyright © 2014. Company Name. All Right reserved</p>
+						<p>Copyright © 2014. PLC Systems Teknik, Inc. All Right reserved</p>
 					</div>
 					<div class="social-media col-md-6 col-xs-4">
 						<a href="http://facebook.com" target="blank"><i class="fa fa-facebook circle"></i></span></a>

@@ -77,6 +77,44 @@
 	add_action('admin_init','add_grav_forms');
 
 		
+	// projects feed
+	//create custom post types for project feed
+	add_action("init", "add_custom_post_types");
+	function add_custom_post_types() {
+		//the practice area type
+		$labels = array(
+			"name" => _x("Projects", "post type general name"),
+			"singular_name" => _x("Projects", "post type singular name"),
+			"add_new" => _x("Add New", "practice area"),
+			"add_new_item" => __("Add Projects"),
+			"edit_item" => __("Edit Projects"),
+			"new_item" => __("New Projects"),
+			"all_items" => __("All Projects"),
+			"view_item" => __("View Projects"),
+			"search_items" => __("Search Projects"),
+			"not_found" =>  __("No Projects found"),
+			"not_found_in_trash" => __("No Projects found in Trash"), 
+			"parent_item_colon" => "",
+			"menu_name" => "Projects"
+		);
+		$args = array(
+			"labels" => $labels,
+			"description" => "",
+			"public" => true,
+			"rewrite" => array("slug"=>"projects"),
+			"has_archive" => true, 
+			"menu_position" => 5,
+			"supports" => array("title","editor","revisions")
+		); 
+		register_post_type("project",$args);
+		register_taxonomy("project-categories","project", array(
+			"hierarchical" => true,
+			"label" => __("Projects Type"),
+			"query_var" => true,
+			"rewrite" => array("slug" => "project-type"),
+		));
+	}
+		
 /*	//create custom post types
 	add_action("init", "add_custom_post_types");
 	function add_custom_post_types() {
@@ -117,7 +155,7 @@
 
 
 
-		//rename posts to products
+		//rename posts to news
 		add_action( 'init', 'change_post_object_label' );
 		add_action( 'admin_menu', 'change_post_menu_label' );
 		function change_post_menu_label() {
