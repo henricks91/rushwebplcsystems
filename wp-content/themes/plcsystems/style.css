@@ -91,28 +91,18 @@ div#logo {
   color: #fff;
   background: url('images/menu-hover-bg.jpg');
   background-size: 100% auto;
-  -moz-box-shadow: 2px 3px 0px 1px #cfcfcf;
-  -webkit-box-shadow: 2px 3px 0px 1px #cfcfcf;
-  box-shadow: 2px 3px 0px 1px #cfcfcf;
 }
 
 .nav .current-menu-item a{
   color: #fff;
   background: url('images/menu-hover-bg.jpg');
   background-size: 100% auto;
-  -moz-box-shadow: 2px 3px 0px 1px #cfcfcf;
-  -webkit-box-shadow: 2px 3px 0px 1px #cfcfcf;
-  box-shadow: 2px 3px 0px 1px #cfcfcf;
 }
 
 /*=========HOMEPAGE========*/
 
 .home-content{
 	background: transparent !important;
-}
-
-.main-banner{
-	margin-top: 50px;
 }
 
 .main-banner .ls-layer.ls-animating img {
@@ -126,7 +116,7 @@ div#logo {
 
 .main-banner .ls-bottom-nav-wrapper{
 	position: absolute;
-    bottom: 15%;
+    bottom: 10%;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -154,8 +144,8 @@ div#logo {
   background: url(images/bottom-latest-bg.jpg) no-repeat;
   background-size: cover;
   width: 100%;
-  max-width: 100%;
-  margin: 45px auto 0;
+  max-width: 1170px;
+  margin: 45px auto;
   padding: 4em 0;
 }
 
@@ -193,14 +183,12 @@ p.date {
   font-size: 14px;
 }
 .latest-news {
-  background-color: #FFF;
-  padding: 35px 0 60px;
+	background-color: #dddddd;
+	padding: 35px 0 60px;
 }
 
 .latest-news .container {
-  background-color: #dddddd;
   padding: 35px 5em 60px;
-  border-radius: 30px;
 }
 .blog .latest-image {
   padding-left: 0px;

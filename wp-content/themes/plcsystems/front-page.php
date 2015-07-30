@@ -6,9 +6,7 @@ Template Name: Homepage Template
 get_header(); ?>
 <div id="main-content" class="home-content">
 	<div class="main-banner">
-		<div class="container">
-			<?php echo do_shortcode('[layerslider id="1"]'); ?>
-		</div>
+		<?php echo do_shortcode('[layerslider id="1"]'); ?>
 	</div><!--End of main banner-->
 
 	
