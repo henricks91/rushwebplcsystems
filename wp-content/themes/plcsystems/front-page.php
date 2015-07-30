@@ -6,9 +6,12 @@ Template Name: Homepage Template
 get_header(); ?>
 <div id="main-content" class="home-content">
 	<div class="main-banner">
-		<?php echo do_shortcode('[layerslider id="1"]'); ?>
+		<div class="container">
+			<?php echo do_shortcode('[layerslider id="1"]'); ?>
+		</div>
 	</div><!--End of main banner-->
 
+	
 	<div class="about-company-text">
 		<div class="container">
 			<h2><?php $_about_company = get_field( 'about_our_company', $post->ID); 	?>
@@ -42,7 +45,7 @@ get_header(); ?>
 					</div>
 					<div class="description col-md-7">
 						<?php echo news_limit_characters(get_the_content(), 60) . '...'; ?>
-						<p class="date"><?php echo get_the_date(get_option('date_format')) ?></p>
+						<p class="date"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>&nbsp;<?php echo get_the_date(get_option('date_format')) ?></p>
 					</div>
 				</div>
 					<?php $i++;
@@ -60,10 +63,10 @@ get_header(); ?>
 	<div class="home-tagline">
 		<div class="container">
 			<?php $_tagline = get_field( '_plc_tagline', $post->ID); 	?>
-            <?php echo $_tagline ?>
+			<?php echo $_tagline ?>
 		</div>
 	</div>
 	
 	</div>
 </div><!--End of main content-->
-<?php get_footer(); ?>
+	<?php get_footer(); ?>

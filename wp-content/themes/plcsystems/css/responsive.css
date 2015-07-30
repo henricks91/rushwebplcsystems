@@ -1,6 +1,32 @@
 /*================Responsive CSS===============*/
 
+@media screen and (max-width: 1300px){
+	footer#footer{
+		background-size: cover;
+	}
+}
+
+@media screen and (max-width: 991px){
+	.latest-news .blog .description{
+		margin-top: 2em;
+	}
+	
+	.latest-news .blog .latest-image{
+		margin: 0 auto;
+	}
+	
+	.home-tagline .container{
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}
+
 @media screen and (max-width: 767px){
+	.latest-news{
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	
 	.latest-news .container > .row {
 	    max-width: none;
 	    float: none;
@@ -10,6 +36,11 @@
 	}
 	.blog .latest-image {
 	    margin: auto;
+	}
+	
+	.latest-news .container{
+		padding-left: 0;
+		padding-right: 0;
 	}
 }
 @media screen and (max-width: 633px){
