@@ -244,6 +244,17 @@ p.date{
 	background-size: cover;
 }
 
+.acf-map {
+	width: 100%;
+	height: 350px;
+	border: #ccc solid 1px;
+	margin: 20px 0;
+}
+
+.address-map-area{
+	margin-top: 3em;
+}
+
 /*=========FOOTER========*/
 
 footer#footer {
