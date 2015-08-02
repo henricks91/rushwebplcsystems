@@ -275,6 +275,7 @@ a.post-link.left {
     left: 70px;
     top: -43px;
 
+<<<<<<< HEAD
 }
 a.post-link.right {
     display: inline-block;
@@ -291,6 +292,19 @@ a.post-link.right {
     max-width: 355px;
     width: 100%;
 }
+=======
+.acf-map {
+	width: 100%;
+	height: 350px;
+	border: #ccc solid 1px;
+	margin: 20px 0;
+}
+
+.address-map-area{
+	margin-top: 3em;
+}
+
+>>>>>>> 51eb28bff90b22719f7cdbcaa311e4a720d2906e
 /*=========FOOTER========*/
 
 footer#footer {
