@@ -20,23 +20,34 @@
 		*/
 	}
 	
+	
+	/*===============DUKE HENRY WAS HERE==============*/
+	if( function_exists('acf_add_options_page') ) {
+	
+		acf_add_options_page();
+		
+	}
+	/*===============DUKE HENRY WAS NOT HERE==============*/
+
+	// =========== JORDAN start =========
+
+
 	// add theme options start
 	
-	function themeoptions_admin_menu()
+	/*function themeoptions_admin_menu()
 	{
 		// here's where we add our theme options page link to the dashboard sidebar
 		add_theme_page("Theme Options", "Theme Options", 'edit_themes', basename(__FILE__), 'themeoptions_page');
-	}
+	}*/
 	 
-	function themeoptions_page()
+	/*function themeoptions_page()
 	{
 		// here is the main function that will generate our options page
-	}
+	}*/
 	 
-	add_action('admin_menu', 'themeoptions_admin_menu');
+	/*add_action('admin_menu', 'themeoptions_admin_menu');*/
 	// add theme options end
-	
-	// =========== JORDAN start =========
+
 	
 	function news_limit_characters($string, $limit, $break=" ", $pad="") {
 	  if(strlen($string) <= $limit) return $string;
@@ -79,39 +90,39 @@
 		
 	// projects feed
 	//create custom post types for project feed
-	add_action("init", "add_custom_post_types");
-	function add_custom_post_types() {
+	add_action("init", "add_project_post_types");
+	function add_project_post_types() {
 		//the practice area type
 		$labels = array(
-			"name" => _x("Projects", "post type general name"),
-			"singular_name" => _x("Projects", "post type singular name"),
-			"add_new" => _x("Add New", "practice area"),
-			"add_new_item" => __("Add Projects"),
-			"edit_item" => __("Edit Projects"),
-			"new_item" => __("New Projects"),
-			"all_items" => __("All Projects"),
-			"view_item" => __("View Projects"),
-			"search_items" => __("Search Projects"),
-			"not_found" =>  __("No Projects found"),
-			"not_found_in_trash" => __("No Projects found in Trash"), 
+			"name" => _x("Products", "post type general name"),
+			"singular_name" => _x("Product", "post type singular name"),
+			"add_new" => _x("Add New Product", "practice area"),
+			"add_new_item" => __("Add Product"),
+			"edit_item" => __("Edit Product"),
+			"new_item" => __("New Product"),
+			"all_items" => __("All Products"),
+			"view_item" => __("View Product"),
+			"search_items" => __("Search Products"),
+			"not_found" =>  __("No Products found"),
+			"not_found_in_trash" => __("No Products found in Trash"), 
 			"parent_item_colon" => "",
-			"menu_name" => "Projects"
+			"menu_name" => "Products"
 		);
 		$args = array(
 			"labels" => $labels,
 			"description" => "",
 			"public" => true,
-			"rewrite" => array("slug"=>"projects"),
+			"rewrite" => array("slug"=>"product"),
 			"has_archive" => true, 
 			"menu_position" => 5,
 			"supports" => array("title","editor","revisions")
 		); 
-		register_post_type("project",$args);
-		register_taxonomy("project-categories","project", array(
+		register_post_type("product",$args);
+		register_taxonomy("product-types","product", array(
 			"hierarchical" => true,
-			"label" => __("Projects Type"),
+			"label" => __("Product Type"),
 			"query_var" => true,
-			"rewrite" => array("slug" => "project-type"),
+			"rewrite" => array("slug" => "product-type"),
 		));
 	}
 		

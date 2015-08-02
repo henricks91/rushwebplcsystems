@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Page With Ajax
+Template Name: Product with AJAX
 */
 
 get_header(); ?>
@@ -45,7 +45,7 @@ get_header(); ?>
 						<ul>
 						<!-- start -->
 							 <?php
-								$query = new WP_Query(array('post_type' => 'project', '&meta_query' => array( array( 'key' => '_is_featured_news','&value' => '1' ))));
+								$query = new WP_Query(array('post_type' => 'products', '&meta_query' => array( array( 'key' => '_is_featured_news','&value' => '1' ))));
 									while ($query->have_posts()) : $query->the_post();
 								 ?>
 								<li class="projects-feed-list">
