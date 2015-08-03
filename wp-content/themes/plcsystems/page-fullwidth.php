@@ -16,6 +16,7 @@ get_header(); ?>
 			<?php if (have_posts()) { ?>
 				<?php while (have_posts()) { the_post(); ?>
 					<article class="post col-md-12 target-content">
+						<div class="button b-close"><span>X</span></div>
 						<h1 class="page-title"><?php the_title(); ?></h1>
 						<div class="page-contents"><?php the_content(''); ?></div>
 					</article>

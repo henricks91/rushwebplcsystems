@@ -292,7 +292,7 @@ a.post-link.right {
     max-width: 355px;
     width: 100%;
 }
-=======
+/* ======= */
 .acf-map {
 	width: 100%;
 	height: 350px;
@@ -304,7 +304,6 @@ a.post-link.right {
 	margin-top: 3em;
 }
 
->>>>>>> 51eb28bff90b22719f7cdbcaa311e4a720d2906e
 /*=========FOOTER========*/
 
 footer#footer {
@@ -352,4 +351,41 @@ footer#footer {
 .fa-google-plus{
   color: #fff;
   background: #000000;
+}
+
+/* CONTENT POPUP */
+
+.hidden-container .target-content{
+	padding: 1em;
+	/* overflow-y: scroll;
+	overflow-x: hidden; */
+}
+
+.hidden-container{
+	/* display: none; */
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 3200;
+	margin: 0 auto;
+	background: #009798;
+}
+
+.button.b-close{
+	position: absolute;
+	right: -25px;
+	top: -5px;
+}
+
+.button.b-close span{
+	background: #FFF;
+	font-weight: 700;
+	padding: 6px;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.hidden-container h1, .hidden-container h2 , .hidden-container h3, .hidden-container h4, .hidden-container h5, .hidden-container h6, .hidden-container p, .hidden-container li, .hidden-container a{
+	color: #FFF;
 }

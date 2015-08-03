@@ -4,6 +4,8 @@ Template Name: Page With Ajax
 */
 
 get_header(); ?>
+	<div class="hidden-container container">
+	</div>
 <div id="main-content" class="page-ajax">
 	<div class="main-banner">
 		<?php echo do_shortcode('[layerslider id="1"]'); ?>
@@ -35,8 +37,6 @@ get_header(); ?>
 				<?php endif; ?>
 				</div>
 			</div>
-
-				
 
 			<div class="col-lg-5 col-md-5 col-sm-5 col-xs-12" id="ajax-content">
 				<?php if (have_posts()) { ?>

@@ -35,6 +35,7 @@ jQuery(document).ready(function($) {
 
 <!--This is the js for the menu toggle-->
 <script type="text/javascript" src="<?php bloginfo("template_directory"); ?>/js/custom.js" charset="utf-8"></script>
+<script src="<?php bloginfo("template_directory"); ?>/js/jordan_custom.js" type="text/javascript"></script>
 <!--[if IE]>
 	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->

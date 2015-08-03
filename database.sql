@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.0.4.1
+-- version 3.3.9
 -- http://www.phpmyadmin.net
 --
--- Host: 127.0.0.1
--- Generation Time: Aug 02, 2015 at 12:34 PM
--- Server version: 5.5.32
--- PHP Version: 5.4.19
+-- Host: localhost
+-- Generation Time: Aug 03, 2015 at 05:08 PM
+-- Server version: 5.5.8
+-- PHP Version: 5.3.5
 
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET time_zone = "+00:00";
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -36,6 +35,11 @@ CREATE TABLE IF NOT EXISTS `wp_commentmeta` (
   KEY `comment_id` (`comment_id`),
   KEY `meta_key` (`meta_key`(191))
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 AUTO_INCREMENT=1 ;
+
+--
+-- Dumping data for table `wp_commentmeta`
+--
+
 
 -- --------------------------------------------------------
 
@@ -66,7 +70,12 @@ CREATE TABLE IF NOT EXISTS `wp_comments` (
   KEY `comment_date_gmt` (`comment_date_gmt`),
   KEY `comment_parent` (`comment_parent`),
   KEY `comment_author_email` (`comment_author_email`(10))
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8mb4 AUTO_INCREMENT=2 ;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 AUTO_INCREMENT=1 ;
+
+--
+-- Dumping data for table `wp_comments`
+--
+
 
 -- --------------------------------------------------------
 
@@ -118,6 +127,11 @@ CREATE TABLE IF NOT EXISTS `wp_links` (
   KEY `link_visible` (`link_visible`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 AUTO_INCREMENT=1 ;
 
+--
+-- Dumping data for table `wp_links`
+--
+
+
 -- --------------------------------------------------------
 
 --
@@ -132,15 +146,15 @@ CREATE TABLE IF NOT EXISTS `wp_options` (
   `autoload` varchar(20) NOT NULL DEFAULT 'yes',
   PRIMARY KEY (`option_id`),
   UNIQUE KEY `option_name` (`option_name`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8mb4 AUTO_INCREMENT=372 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8mb4 AUTO_INCREMENT=378 ;
 
 --
 -- Dumping data for table `wp_options`
 --
 
 INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`) VALUES
-(1, 'siteurl', 'http://localhost/plcsystems', 'yes'),
-(2, 'home', 'http://localhost/plcsystems', 'yes'),
+(1, 'siteurl', 'http://localhost/rushwebplcsystems', 'yes'),
+(2, 'home', 'http://localhost/rushwebplcsystems', 'yes'),
 (3, 'blogname', 'plcsystems', 'yes'),
 (4, 'blogdescription', 'Just another WordPress site', 'yes'),
 (5, 'users_can_register', '0', 'yes'),
@@ -233,9 +247,9 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (93, 'widget_archives', 'a:2:{i:2;a:3:{s:5:"title";s:0:"";s:5:"count";i:0;s:8:"dropdown";i:0;}s:12:"_multiwidget";i:1;}', 'yes'),
 (94, 'widget_meta', 'a:1:{s:12:"_multiwidget";i:1;}', 'yes'),
 (95, 'sidebars_widgets', 'a:3:{s:19:"wp_inactive_widgets";a:0:{}s:9:"sidebar-1";a:3:{i:0;s:14:"recent-posts-2";i:1;s:10:"archives-2";i:2;s:12:"categories-2";}s:13:"array_version";i:3;}', 'yes'),
-(97, 'cron', 'a:5:{i:1438543560;a:1:{s:20:"wp_maybe_auto_update";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}}i:1438545878;a:3:{s:16:"wp_version_check";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}s:17:"wp_update_plugins";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}s:16:"wp_update_themes";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}}i:1438589095;a:1:{s:19:"wp_scheduled_delete";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}i:1438592818;a:1:{s:30:"wp_scheduled_auto_draft_delete";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}s:7:"version";i:2;}', 'yes'),
+(97, 'cron', 'a:5:{i:1438629960;a:1:{s:20:"wp_maybe_auto_update";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}}i:1438632278;a:3:{s:16:"wp_version_check";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}s:17:"wp_update_plugins";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}s:16:"wp_update_themes";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}}i:1438675495;a:1:{s:19:"wp_scheduled_delete";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}i:1438679218;a:1:{s:30:"wp_scheduled_auto_draft_delete";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}s:7:"version";i:2;}', 'yes'),
 (107, '_transient_random_seed', '414fe1a361c304ef3b0a14857abaebd5', 'yes'),
-(109, '_site_transient_update_themes', 'O:8:"stdClass":4:{s:12:"last_checked";i:1438504723;s:7:"checked";a:1:{s:10:"plcsystems";s:3:"1.1";}s:8:"response";a:0:{}s:12:"translations";a:0:{}}', 'yes'),
+(109, '_site_transient_update_themes', 'O:8:"stdClass":4:{s:12:"last_checked";i:1438595218;s:7:"checked";a:1:{s:10:"plcsystems";s:3:"1.1";}s:8:"response";a:0:{}s:12:"translations";a:0:{}}', 'yes'),
 (112, 'db_upgraded', '', 'yes'),
 (114, 'auto_core_update_notified', 'a:4:{s:4:"type";s:7:"success";s:5:"email";s:20:"henricks91@gmail.com";s:7:"version";s:5:"4.2.3";s:9:"timestamp";i:1437799649;}', 'yes'),
 (134, '_transient_twentyfifteen_categories', '1', 'yes'),
@@ -248,7 +262,7 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (165, '_site_transient_browser_8bacdea3c28bd99fa146b651785daec4', 'a:9:{s:8:"platform";s:7:"Windows";s:4:"name";s:6:"Chrome";s:7:"version";s:13:"43.0.2357.134";s:10:"update_url";s:28:"http://www.google.com/chrome";s:7:"img_src";s:49:"http://s.wordpress.org/images/browsers/chrome.png";s:11:"img_src_ssl";s:48:"https://wordpress.org/images/browsers/chrome.png";s:15:"current_version";s:2:"18";s:7:"upgrade";b:0;s:8:"insecure";b:0;}', 'yes'),
 (166, 'recently_activated', 'a:0:{}', 'yes'),
 (168, 'rg_form_version', '1.7.3', 'yes'),
-(186, '_site_transient_update_core', 'O:8:"stdClass":4:{s:7:"updates";a:1:{i:0;O:8:"stdClass":10:{s:8:"response";s:6:"latest";s:8:"download";s:59:"https://downloads.wordpress.org/release/wordpress-4.2.3.zip";s:6:"locale";s:5:"en_US";s:8:"packages";O:8:"stdClass":5:{s:4:"full";s:59:"https://downloads.wordpress.org/release/wordpress-4.2.3.zip";s:10:"no_content";s:70:"https://downloads.wordpress.org/release/wordpress-4.2.3-no-content.zip";s:11:"new_bundled";s:71:"https://downloads.wordpress.org/release/wordpress-4.2.3-new-bundled.zip";s:7:"partial";b:0;s:8:"rollback";b:0;}s:7:"current";s:5:"4.2.3";s:7:"version";s:5:"4.2.3";s:11:"php_version";s:5:"5.2.4";s:13:"mysql_version";s:3:"5.0";s:11:"new_bundled";s:3:"4.1";s:15:"partial_version";s:0:"";}}s:12:"last_checked";i:1438504713;s:15:"version_checked";s:5:"4.2.3";s:12:"translations";a:0:{}}', 'yes'),
+(186, '_site_transient_update_core', 'O:8:"stdClass":4:{s:7:"updates";a:1:{i:0;O:8:"stdClass":10:{s:8:"response";s:6:"latest";s:8:"download";s:58:"http://downloads.wordpress.org/release/wordpress-4.2.3.zip";s:6:"locale";s:5:"en_US";s:8:"packages";O:8:"stdClass":5:{s:4:"full";s:58:"http://downloads.wordpress.org/release/wordpress-4.2.3.zip";s:10:"no_content";s:69:"http://downloads.wordpress.org/release/wordpress-4.2.3-no-content.zip";s:11:"new_bundled";s:70:"http://downloads.wordpress.org/release/wordpress-4.2.3-new-bundled.zip";s:7:"partial";b:0;s:8:"rollback";b:0;}s:7:"current";s:5:"4.2.3";s:7:"version";s:5:"4.2.3";s:11:"php_version";s:5:"5.2.4";s:13:"mysql_version";s:3:"5.0";s:11:"new_bundled";s:3:"4.1";s:15:"partial_version";s:0:"";}}s:12:"last_checked";i:1438595215;s:15:"version_checked";s:5:"4.2.3";s:12:"translations";a:0:{}}', 'yes'),
 (191, '_site_transient_timeout_browser_0e87d76942db3bed36d68e35d5a4e90e', '1438404515', 'yes'),
 (192, '_site_transient_browser_0e87d76942db3bed36d68e35d5a4e90e', 'a:9:{s:8:"platform";s:7:"Windows";s:4:"name";s:6:"Chrome";s:7:"version";s:12:"44.0.2403.89";s:10:"update_url";s:28:"http://www.google.com/chrome";s:7:"img_src";s:49:"http://s.wordpress.org/images/browsers/chrome.png";s:11:"img_src_ssl";s:48:"https://wordpress.org/images/browsers/chrome.png";s:15:"current_version";s:2:"18";s:7:"upgrade";b:0;s:8:"insecure";b:0;}', 'yes'),
 (193, 'can_compress_scripts', '1', 'yes'),
@@ -283,12 +297,12 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (347, '_transient_feed_mod_b9388c83948825c1edaef0d856b7b109', '1438418537', 'no'),
 (348, '_transient_timeout_dash_4077549d03da2e451c8b5f002294ff51', '1438461737', 'no'),
 (349, '_transient_dash_4077549d03da2e451c8b5f002294ff51', '<div class="rss-widget"><ul><li><a class=''rsswidget'' href=''https://wordpress.org/news/2015/07/wordpress-4-3-release-candidate/''>WordPress 4.3 Release Candidate</a> <span class="rss-date">July 29, 2015</span><div class="rssSummary">The release candidate for WordPress 4.3 is now available. We’ve made more than 100 changes since releasing Beta 4 a week ago. RC means we think we’re done, but with millions of users and thousands of plugins and themes, it’s possible we’ve missed something. We hope to ship WordPress 4.3 on Tuesday, August 18, but we [&hellip;]</div></li></ul></div><div class="rss-widget"><ul><li><a class=''rsswidget'' href=''http://wptavern.com/how-to-avoid-embarrassing-sharing-bug-on-wordpress-com''>WPTavern: How to Avoid This Embarrassing Sharing Bug on WordPress.com</a></li><li><a class=''rsswidget'' href=''http://wptavern.com/wpweekly-episode-201-interview-with-paul-gibbs-and-john-james-jacoby''>WPTavern: WPWeekly Episode 201 – Interview With Paul Gibbs and John James Jacoby</a></li><li><a class=''rsswidget'' href=''http://ma.tt/2015/07/hong-kong-morning/''>Matt: Hong Kong Morning</a></li></ul></div><div class="rss-widget"><ul><li class=''dashboard-news-plugin''><span>Popular Plugin:</span> <a href=''https://wordpress.org/plugins/google-analytics-dashboard-for-wp/'' class=''dashboard-news-plugin-link''>Google Analytics Dashboard for WP</a>&nbsp;<span>(<a href=''plugin-install.php?tab=plugin-information&amp;plugin=google-analytics-dashboard-for-wp&amp;_wpnonce=b3d191b85f&amp;TB_iframe=true&amp;width=600&amp;height=800'' class=''thickbox'' title=''Google Analytics Dashboard for WP''>Install</a>)</span></li></ul></div>', 'no'),
-(351, '_transient_timeout_gform_update_info', '1438516584', 'no'),
-(352, '_transient_gform_update_info', 'O:8:"WP_Error":2:{s:6:"errors";a:1:{s:19:"http_request_failed";a:1:{i:0;s:43:"Could not resolve host: www.gravityhelp.com";}}s:10:"error_data";a:0:{}}', 'no'),
 (360, 'product-types_children', 'a:0:{}', 'yes'),
-(368, '_site_transient_timeout_theme_roots', '1438506515', 'yes'),
-(369, '_site_transient_theme_roots', 'a:1:{s:10:"plcsystems";s:7:"/themes";}', 'yes'),
-(370, '_site_transient_update_plugins', 'O:8:"stdClass":4:{s:12:"last_checked";i:1438504720;s:8:"response";a:1:{s:19:"akismet/akismet.php";O:8:"stdClass":6:{s:2:"id";s:2:"15";s:4:"slug";s:7:"akismet";s:6:"plugin";s:19:"akismet/akismet.php";s:11:"new_version";s:5:"3.1.3";s:3:"url";s:38:"https://wordpress.org/plugins/akismet/";s:7:"package";s:56:"https://downloads.wordpress.org/plugin/akismet.3.1.3.zip";}}s:12:"translations";a:0:{}s:9:"no_update";a:2:{s:30:"advanced-custom-fields/acf.php";O:8:"stdClass":6:{s:2:"id";s:5:"21367";s:4:"slug";s:22:"advanced-custom-fields";s:6:"plugin";s:30:"advanced-custom-fields/acf.php";s:11:"new_version";s:5:"4.4.2";s:3:"url";s:53:"https://wordpress.org/plugins/advanced-custom-fields/";s:7:"package";s:65:"https://downloads.wordpress.org/plugin/advanced-custom-fields.zip";}s:74:"gravity-forms-placeholder-support-add-on/gravityform-placeholder-addon.php";O:8:"stdClass":6:{s:2:"id";s:5:"47574";s:4:"slug";s:40:"gravity-forms-placeholder-support-add-on";s:6:"plugin";s:74:"gravity-forms-placeholder-support-add-on/gravityform-placeholder-addon.php";s:11:"new_version";s:5:"1.1.0";s:3:"url";s:71:"https://wordpress.org/plugins/gravity-forms-placeholder-support-add-on/";s:7:"package";s:83:"https://downloads.wordpress.org/plugin/gravity-forms-placeholder-support-add-on.zip";}}}', 'yes');
+(373, '_site_transient_timeout_theme_roots', '1438597014', 'yes'),
+(374, '_site_transient_theme_roots', 'a:1:{s:10:"plcsystems";s:7:"/themes";}', 'yes'),
+(375, '_site_transient_update_plugins', 'O:8:"stdClass":4:{s:12:"last_checked";i:1438595217;s:8:"response";a:1:{s:19:"akismet/akismet.php";O:8:"stdClass":6:{s:2:"id";s:2:"15";s:4:"slug";s:7:"akismet";s:6:"plugin";s:19:"akismet/akismet.php";s:11:"new_version";s:5:"3.1.3";s:3:"url";s:38:"https://wordpress.org/plugins/akismet/";s:7:"package";s:55:"http://downloads.wordpress.org/plugin/akismet.3.1.3.zip";}}s:12:"translations";a:0:{}s:9:"no_update";a:2:{s:30:"advanced-custom-fields/acf.php";O:8:"stdClass":6:{s:2:"id";s:5:"21367";s:4:"slug";s:22:"advanced-custom-fields";s:6:"plugin";s:30:"advanced-custom-fields/acf.php";s:11:"new_version";s:5:"4.4.2";s:3:"url";s:53:"https://wordpress.org/plugins/advanced-custom-fields/";s:7:"package";s:64:"http://downloads.wordpress.org/plugin/advanced-custom-fields.zip";}s:74:"gravity-forms-placeholder-support-add-on/gravityform-placeholder-addon.php";O:8:"stdClass":6:{s:2:"id";s:5:"47574";s:4:"slug";s:40:"gravity-forms-placeholder-support-add-on";s:6:"plugin";s:74:"gravity-forms-placeholder-support-add-on/gravityform-placeholder-addon.php";s:11:"new_version";s:5:"1.1.0";s:3:"url";s:71:"https://wordpress.org/plugins/gravity-forms-placeholder-support-add-on/";s:7:"package";s:82:"http://downloads.wordpress.org/plugin/gravity-forms-placeholder-support-add-on.zip";}}}', 'yes'),
+(376, '_transient_timeout_gform_update_info', '1438681630', 'no'),
+(377, '_transient_gform_update_info', 'a:5:{s:7:"headers";a:6:{s:4:"date";s:29:"Mon, 03 Aug 2015 09:47:11 GMT";s:6:"server";s:12:"Apache/2.4.7";s:12:"x-powered-by";s:21:"PHP/5.5.9-1ubuntu4.11";s:14:"content-length";s:2:"13";s:10:"connection";s:5:"close";s:12:"content-type";s:9:"text/html";}s:4:"body";s:13:"0||1.7.9||||0";s:8:"response";a:2:{s:4:"code";i:200;s:7:"message";s:2:"OK";}s:7:"cookies";a:0:{}s:8:"filename";N;}', 'no');
 
 -- --------------------------------------------------------
 
@@ -305,7 +319,7 @@ CREATE TABLE IF NOT EXISTS `wp_postmeta` (
   PRIMARY KEY (`meta_id`),
   KEY `post_id` (`post_id`),
   KEY `meta_key` (`meta_key`(191))
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8mb4 AUTO_INCREMENT=232 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8mb4 AUTO_INCREMENT=250 ;
 
 --
 -- Dumping data for table `wp_postmeta`
@@ -316,14 +330,14 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (5, 5, '_wp_page_template', 'front-page.php'),
 (6, 5, '_edit_lock', '1438262615:1'),
 (7, 7, '_edit_last', '1'),
-(8, 7, '_edit_lock', '1438424219:1'),
+(8, 7, '_edit_lock', '1438614249:1'),
 (9, 7, '_wp_page_template', 'page-internal.php'),
 (10, 9, '_edit_last', '1'),
 (11, 9, '_edit_lock', '1438484212:1'),
 (12, 9, '_wp_page_template', 'page-product.php'),
 (13, 11, '_edit_last', '1'),
-(14, 11, '_wp_page_template', 'page-fullwidth.php'),
-(15, 11, '_edit_lock', '1438174183:1'),
+(14, 11, '_wp_page_template', 'contact-template.php'),
+(15, 11, '_edit_lock', '1438597915:1'),
 (16, 14, '_menu_item_type', 'post_type'),
 (17, 14, '_menu_item_menu_item_parent', '0'),
 (18, 14, '_menu_item_object_id', '11'),
@@ -437,7 +451,7 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (150, 11, 'socials_icons', ''),
 (151, 11, '_socials_icons', 'field_55b64bc245d41'),
 (152, 46, '_edit_last', '1'),
-(153, 46, '_edit_lock', '1438422599:1'),
+(153, 46, '_edit_lock', '1438614334:1'),
 (154, 46, '_wp_page_template', 'page-fullwidth.php'),
 (155, 48, '_edit_last', '1'),
 (156, 48, '_edit_lock', '1438422621:1'),
@@ -507,7 +521,25 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (228, 84, 'links_ajax', ''),
 (229, 84, '_links_ajax', 'field_55bc99e7f1dcb'),
 (230, 9, 'links_ajax', ''),
-(231, 9, '_links_ajax', 'field_55bc99e7f1dcb');
+(231, 9, '_links_ajax', 'field_55bc99e7f1dcb'),
+(232, 85, '_edit_last', '1'),
+(233, 85, 'field_55bf38f6eb61f', 'a:11:{s:3:"key";s:19:"field_55bf38f6eb61f";s:5:"label";s:7:"Address";s:4:"name";s:12:"_plc_address";s:4:"type";s:7:"wysiwyg";s:12:"instructions";s:0:"";s:8:"required";s:1:"0";s:13:"default_value";s:0:"";s:7:"toolbar";s:4:"full";s:12:"media_upload";s:3:"yes";s:17:"conditional_logic";a:3:{s:6:"status";s:1:"0";s:5:"rules";a:1:{i:0;a:2:{s:5:"field";s:4:"null";s:8:"operator";s:2:"==";}}s:8:"allorany";s:3:"all";}s:8:"order_no";i:0;}'),
+(234, 85, 'field_55bf3908eb620', 'a:12:{s:3:"key";s:19:"field_55bf3908eb620";s:5:"label";s:10:"Google Map";s:4:"name";s:15:"_plc_google_map";s:4:"type";s:10:"google_map";s:12:"instructions";s:0:"";s:8:"required";s:1:"0";s:10:"center_lat";s:0:"";s:10:"center_lng";s:0:"";s:4:"zoom";s:0:"";s:6:"height";s:0:"";s:17:"conditional_logic";a:3:{s:6:"status";s:1:"0";s:5:"rules";a:1:{i:0;a:2:{s:5:"field";s:4:"null";s:8:"operator";s:2:"==";}}s:8:"allorany";s:3:"all";}s:8:"order_no";i:1;}'),
+(235, 85, 'rule', 'a:5:{s:5:"param";s:4:"page";s:8:"operator";s:2:"==";s:5:"value";s:2:"11";s:8:"order_no";i:0;s:8:"group_no";i:0;}'),
+(236, 85, 'position', 'normal'),
+(237, 85, 'layout', 'no_box'),
+(238, 85, 'hide_on_screen', ''),
+(239, 85, '_edit_lock', '1438595226:1'),
+(240, 86, '_plc_address', 'Address: Sample Street, Sample Province\r\n\r\nPhone: 00-00-0000\r\n\r\nEmail: <a href="mailto:test_email@plc.com">test_email@plc.com</a>'),
+(241, 86, '__plc_address', 'field_55bf38f6eb61f'),
+(242, 86, '_plc_google_map', 'a:3:{s:7:"address";s:39:"Cebu City, Central Visayas, Philippines";s:3:"lat";s:10:"10.3156992";s:3:"lng";s:18:"123.88543660000005";}'),
+(243, 86, '__plc_google_map', 'field_55bf3908eb620'),
+(244, 86, 'socials_icons', ''),
+(245, 86, '_socials_icons', 'field_55b64bc245d41'),
+(246, 11, '_plc_address', 'Address: Sample Street, Sample Province\r\n\r\nPhone: 00-00-0000\r\n\r\nEmail: <a href="mailto:test_email@plc.com">test_email@plc.com</a>'),
+(247, 11, '__plc_address', 'field_55bf38f6eb61f'),
+(248, 11, '_plc_google_map', 'a:3:{s:7:"address";s:39:"Cebu City, Central Visayas, Philippines";s:3:"lat";s:10:"10.3156992";s:3:"lng";s:18:"123.88543660000005";}'),
+(249, 11, '__plc_google_map', 'field_55bf3908eb620');
 
 -- --------------------------------------------------------
 
@@ -545,7 +577,7 @@ CREATE TABLE IF NOT EXISTS `wp_posts` (
   KEY `type_status_date` (`post_type`,`post_status`,`post_date`,`ID`),
   KEY `post_parent` (`post_parent`),
   KEY `post_author` (`post_author`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8mb4 AUTO_INCREMENT=85 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8mb4 AUTO_INCREMENT=88 ;
 
 --
 -- Dumping data for table `wp_posts`
@@ -558,7 +590,7 @@ INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post
 (8, 1, '2015-07-12 09:07:32', '2015-07-12 09:07:32', '', 'Our Company', '', 'inherit', 'open', 'open', '', '7-revision-v1', '', '', '2015-07-12 09:07:32', '2015-07-12 09:07:32', '', 7, 'http://localhost/plcsystems/2015/07/12/7-revision-v1/', 0, 'revision', '', 0),
 (9, 1, '2015-07-12 09:08:29', '2015-07-12 09:08:29', '', 'Products', '', 'publish', 'open', 'closed', '', 'products', '', '', '2015-08-02 02:57:18', '2015-08-02 02:57:18', '', 0, 'http://localhost/plcsystems/?page_id=9', 0, 'page', '', 0),
 (10, 1, '2015-07-12 09:08:29', '2015-07-12 09:08:29', '', 'Product & Services', '', 'inherit', 'open', 'open', '', '9-revision-v1', '', '', '2015-07-12 09:08:29', '2015-07-12 09:08:29', '', 9, 'http://localhost/plcsystems/2015/07/12/9-revision-v1/', 0, 'revision', '', 0),
-(11, 1, '2015-07-12 09:10:34', '2015-07-12 09:10:34', 'Sample text for Contact Us!', 'Contact Us', '', 'publish', 'open', 'open', '', 'contact-us', '', '', '2015-07-29 12:51:33', '2015-07-29 12:51:33', '', 0, 'http://localhost/plcsystems/?page_id=11', 0, 'page', '', 0),
+(11, 1, '2015-07-12 09:10:34', '2015-07-12 09:10:34', 'Sample text for Contact Us!', 'Contact Us', '', 'publish', 'open', 'open', '', 'contact-us', '', '', '2015-08-03 09:51:04', '2015-08-03 09:51:04', '', 0, 'http://localhost/plcsystems/?page_id=11', 0, 'page', '', 0),
 (12, 1, '2015-07-12 09:10:34', '2015-07-12 09:10:34', '', 'Contact Us', '', 'inherit', 'open', 'open', '', '11-revision-v1', '', '', '2015-07-12 09:10:34', '2015-07-12 09:10:34', '', 11, 'http://localhost/plcsystems/2015/07/12/11-revision-v1/', 0, 'revision', '', 0),
 (14, 1, '2015-07-19 05:25:32', '2015-07-19 05:25:32', ' ', '', '', 'publish', 'open', 'open', '', '14', '', '', '2015-08-01 09:36:09', '2015-08-01 09:36:09', '', 0, 'http://localhost/plcsystems/?p=14', 5, 'nav_menu_item', '', 0),
 (15, 1, '2015-07-19 05:25:31', '2015-07-19 05:25:31', ' ', '', '', 'publish', 'open', 'open', '', '15', '', '', '2015-08-01 09:36:09', '2015-08-01 09:36:09', '', 0, 'http://localhost/plcsystems/?p=15', 3, 'nav_menu_item', '', 0),
@@ -569,7 +601,6 @@ INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post
 (20, 1, '2015-07-26 04:44:34', '2015-07-26 04:44:34', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry''s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.', 'Our Company', '', 'inherit', 'open', 'open', '', '7-revision-v1', '', '', '2015-07-26 04:44:34', '2015-07-26 04:44:34', '', 7, 'http://localhost/plcsystems/2015/07/26/7-revision-v1/', 0, 'revision', '', 0),
 (22, 1, '2015-07-27 15:03:02', '2015-07-27 15:03:02', '', 'Homepage', '', 'publish', 'closed', 'closed', '', 'acf_homepage', '', '', '2015-07-28 14:32:19', '2015-07-28 14:32:19', '', 0, 'http://localhost/rushwebplcsystems/?post_type=acf&#038;p=22', 0, 'acf', '', 0),
 (23, 1, '2015-07-27 15:13:34', '2015-07-27 15:13:34', '', 'Home', '', 'inherit', 'open', 'open', '', '5-revision-v1', '', '', '2015-07-27 15:13:34', '2015-07-27 15:13:34', '', 5, 'http://localhost/rushwebplcsystems/5-revision-v1/', 0, 'revision', '', 0),
-(24, 1, '2015-07-27 15:17:26', '0000-00-00 00:00:00', '', 'Auto Draft', '', 'auto-draft', 'open', 'open', '', '', '', '', '2015-07-27 15:17:26', '0000-00-00 00:00:00', '', 0, 'http://localhost/rushwebplcsystems/?post_type=acf&p=24', 0, 'acf', '', 0),
 (25, 1, '2015-07-27 15:19:00', '2015-07-27 15:19:00', '', 'Theme Option', '', 'publish', 'closed', 'closed', '', 'acf_theme-option', '', '', '2015-07-27 15:24:30', '2015-07-27 15:24:30', '', 0, 'http://localhost/rushwebplcsystems/?post_type=acf&#038;p=25', 0, 'acf', '', 0),
 (26, 1, '2015-07-27 15:21:59', '2015-07-27 15:21:59', '', 'Home', '', 'inherit', 'open', 'open', '', '5-revision-v1', '', '', '2015-07-27 15:21:59', '2015-07-27 15:21:59', '', 5, 'http://localhost/rushwebplcsystems/5-revision-v1/', 0, 'revision', '', 0),
 (27, 1, '2015-07-27 15:30:04', '2015-07-27 15:30:04', '', 'Home', '', 'inherit', 'open', 'open', '', '5-revision-v1', '', '', '2015-07-27 15:30:04', '2015-07-27 15:30:04', '', 5, 'http://localhost/rushwebplcsystems/5-revision-v1/', 0, 'revision', '', 0),
@@ -588,7 +619,7 @@ INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post
 (43, 1, '2015-07-28 15:17:57', '2015-07-28 15:17:57', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.', 'Product & Services', '', 'inherit', 'open', 'open', '', '9-revision-v1', '', '', '2015-07-28 15:17:57', '2015-07-28 15:17:57', '', 9, 'http://localhost/rushwebplcsystems/9-revision-v1/', 0, 'revision', '', 0),
 (44, 1, '2015-07-29 10:55:12', '2015-07-29 10:55:12', 'Our Company text. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry''s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Our Company text.', 'Our Company', '', 'inherit', 'open', 'open', '', '7-revision-v1', '', '', '2015-07-29 10:55:12', '2015-07-29 10:55:12', '', 7, 'http://localhost/rushwebplcsystems/7-revision-v1/', 0, 'revision', '', 0),
 (45, 1, '2015-07-29 12:38:32', '2015-07-29 12:38:32', 'Sample text for Contact Us!', 'Contact Us', '', 'inherit', 'open', 'open', '', '11-revision-v1', '', '', '2015-07-29 12:38:32', '2015-07-29 12:38:32', '', 11, 'http://localhost/rushwebplcsystems/11-revision-v1/', 0, 'revision', '', 0),
-(46, 1, '2015-07-29 12:54:39', '2015-07-29 12:54:39', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\r\n\r\nLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.', 'Mission', '', 'publish', 'open', 'closed', '', 'mission', '', '', '2015-08-01 09:49:59', '2015-08-01 09:49:59', '', 7, 'http://localhost/rushwebplcsystems/?page_id=46', 0, 'page', '', 0),
+(46, 1, '2015-07-29 12:54:39', '2015-07-29 12:54:39', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\r\n\r\nLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\r\n\r\nLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\r\n\r\nLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\r\n\r\nLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.', 'Mission', '', 'publish', 'open', 'closed', '', 'mission', '', '', '2015-08-03 15:06:46', '2015-08-03 15:06:46', '', 7, 'http://localhost/rushwebplcsystems/?page_id=46', 0, 'page', '', 0),
 (47, 1, '2015-07-29 12:54:40', '2015-07-29 12:54:40', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\r\n\r\nLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.', 'Sample Content 1', '', 'inherit', 'open', 'open', '', '46-revision-v1', '', '', '2015-07-29 12:54:40', '2015-07-29 12:54:40', '', 46, 'http://localhost/rushwebplcsystems/46-revision-v1/', 0, 'revision', '', 0),
 (48, 1, '2015-07-29 12:55:17', '2015-07-29 12:55:17', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\r\n\r\nLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\r\n\r\nLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.', 'Vision', '', 'publish', 'open', 'closed', '', 'vision', '', '', '2015-08-01 09:50:20', '2015-08-01 09:50:20', '', 7, 'http://localhost/rushwebplcsystems/?page_id=48', 0, 'page', '', 0),
 (49, 1, '2015-07-29 12:55:17', '2015-07-29 12:55:17', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\r\n\r\nLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\r\n\r\nLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.', 'Sample Content 2', '', 'inherit', 'open', 'open', '', '48-revision-v1', '', '', '2015-07-29 12:55:17', '2015-07-29 12:55:17', '', 48, 'http://localhost/rushwebplcsystems/48-revision-v1/', 0, 'revision', '', 0),
@@ -626,7 +657,10 @@ INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post
 (81, 1, '2015-08-01 10:12:27', '2015-08-01 10:12:27', '', 'Our Company', '', 'inherit', 'open', 'open', '', '7-revision-v1', '', '', '2015-08-01 10:12:27', '2015-08-01 10:12:27', '', 7, 'http://localhost/plcsystems/7-revision-v1/', 0, 'revision', '', 0),
 (82, 1, '2015-08-01 10:13:13', '2015-08-01 10:13:13', '', 'Our Company', '', 'inherit', 'open', 'open', '', '7-revision-v1', '', '', '2015-08-01 10:13:13', '2015-08-01 10:13:13', '', 7, 'http://localhost/plcsystems/7-revision-v1/', 0, 'revision', '', 0),
 (83, 1, '2015-08-02 02:50:42', '0000-00-00 00:00:00', '', 'Auto Draft', '', 'auto-draft', 'open', 'open', '', '', '', '', '2015-08-02 02:50:42', '0000-00-00 00:00:00', '', 0, 'http://localhost/plcsystems/?post_type=product&p=83', 0, 'product', '', 0),
-(84, 1, '2015-08-02 02:55:30', '2015-08-02 02:55:30', '', 'Products', '', 'inherit', 'open', 'open', '', '9-revision-v1', '', '', '2015-08-02 02:55:30', '2015-08-02 02:55:30', '', 9, 'http://localhost/plcsystems/9-revision-v1/', 0, 'revision', '', 0);
+(84, 1, '2015-08-02 02:55:30', '2015-08-02 02:55:30', '', 'Products', '', 'inherit', 'open', 'open', '', '9-revision-v1', '', '', '2015-08-02 02:55:30', '2015-08-02 02:55:30', '', 9, 'http://localhost/plcsystems/9-revision-v1/', 0, 'revision', '', 0),
+(85, 1, '2015-08-03 09:49:26', '2015-08-03 09:49:26', '', 'Contact Us', '', 'publish', 'closed', 'closed', '', 'acf_contact-us', '', '', '2015-08-03 09:49:26', '2015-08-03 09:49:26', '', 0, 'http://localhost/rushwebplcsystems/?post_type=acf&#038;p=85', 0, 'acf', '', 0),
+(86, 1, '2015-08-03 09:51:04', '2015-08-03 09:51:04', 'Sample text for Contact Us!', 'Contact Us', '', 'inherit', 'open', 'open', '', '11-revision-v1', '', '', '2015-08-03 09:51:04', '2015-08-03 09:51:04', '', 11, 'http://localhost/rushwebplcsystems/11-revision-v1/', 0, 'revision', '', 0),
+(87, 1, '2015-08-03 15:06:46', '2015-08-03 15:06:46', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\r\n\r\nLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\r\n\r\nLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\r\n\r\nLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\r\n\r\nLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.', 'Mission', '', 'inherit', 'open', 'open', '', '46-revision-v1', '', '', '2015-08-03 15:06:46', '2015-08-03 15:06:46', '', 46, 'http://localhost/rushwebplcsystems/46-revision-v1/', 0, 'revision', '', 0);
 
 -- --------------------------------------------------------
 
@@ -642,6 +676,11 @@ CREATE TABLE IF NOT EXISTS `wp_rg_form` (
   `is_active` tinyint(1) NOT NULL DEFAULT '1',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 AUTO_INCREMENT=1 ;
+
+--
+-- Dumping data for table `wp_rg_form`
+--
+
 
 -- --------------------------------------------------------
 
@@ -659,6 +698,11 @@ CREATE TABLE IF NOT EXISTS `wp_rg_form_meta` (
   PRIMARY KEY (`form_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Dumping data for table `wp_rg_form_meta`
+--
+
+
 -- --------------------------------------------------------
 
 --
@@ -675,6 +719,11 @@ CREATE TABLE IF NOT EXISTS `wp_rg_form_view` (
   PRIMARY KEY (`id`),
   KEY `form_id` (`form_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 AUTO_INCREMENT=1 ;
+
+--
+-- Dumping data for table `wp_rg_form_view`
+--
+
 
 -- --------------------------------------------------------
 
@@ -707,6 +756,11 @@ CREATE TABLE IF NOT EXISTS `wp_rg_lead` (
   KEY `status` (`status`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 AUTO_INCREMENT=1 ;
 
+--
+-- Dumping data for table `wp_rg_lead`
+--
+
+
 -- --------------------------------------------------------
 
 --
@@ -726,6 +780,11 @@ CREATE TABLE IF NOT EXISTS `wp_rg_lead_detail` (
   KEY `lead_field_number` (`lead_id`,`field_number`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 AUTO_INCREMENT=1 ;
 
+--
+-- Dumping data for table `wp_rg_lead_detail`
+--
+
+
 -- --------------------------------------------------------
 
 --
@@ -738,6 +797,11 @@ CREATE TABLE IF NOT EXISTS `wp_rg_lead_detail_long` (
   `value` longtext,
   PRIMARY KEY (`lead_detail_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `wp_rg_lead_detail_long`
+--
+
 
 -- --------------------------------------------------------
 
@@ -758,6 +822,11 @@ CREATE TABLE IF NOT EXISTS `wp_rg_lead_meta` (
   KEY `form_id_meta_key` (`form_id`,`meta_key`(191))
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 AUTO_INCREMENT=1 ;
 
+--
+-- Dumping data for table `wp_rg_lead_meta`
+--
+
+
 -- --------------------------------------------------------
 
 --
@@ -776,6 +845,11 @@ CREATE TABLE IF NOT EXISTS `wp_rg_lead_notes` (
   KEY `lead_id` (`lead_id`),
   KEY `lead_user_key` (`lead_id`,`user_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 AUTO_INCREMENT=1 ;
+
+--
+-- Dumping data for table `wp_rg_lead_notes`
+--
+
 
 -- --------------------------------------------------------
 
@@ -942,7 +1016,3 @@ CREATE TABLE IF NOT EXISTS `wp_users` (
 
 INSERT INTO `wp_users` (`ID`, `user_login`, `user_pass`, `user_nicename`, `user_email`, `user_url`, `user_registered`, `user_activation_key`, `user_status`, `display_name`) VALUES
 (1, 'admin', '$P$BJWH/KnG19KFXzIukfmmWGesGv.x0F.', 'admin', 'henricks91@gmail.com', '', '2015-07-12 08:04:35', '', 0, 'admin');
-
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
