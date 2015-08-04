@@ -10,5 +10,17 @@ jQuery(document).ready(function($) {
         });
 		
 	});
+	
+	$(".sliding-news").bootstrapNews({
+		newsPerPage: 6,
+		autoplay: true,
+		pauseOnHover: true,
+		navigation: false,
+		direction: 'down',
+		newsTickerInterval: 5000,
+		onToDo: function () {
+			//console.log(this);
+		}
+    });
 
 });

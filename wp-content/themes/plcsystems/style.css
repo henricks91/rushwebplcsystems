@@ -31,7 +31,7 @@ a {
   font-family: 'proxima-nova', Helvetica, arial, sans-serif;
 }
 a:hover{
-  color: #7f1232;
+  color: #009798;
   transition: all 0.5s ease;
   text-decoration: none;
 }
@@ -274,9 +274,8 @@ a.post-link.left {
     text-align: center;
     left: 70px;
     top: -43px;
-
-<<<<<<< HEAD
 }
+
 a.post-link.right {
     display: inline-block;
     position: absolute;
@@ -288,10 +287,66 @@ a.post-link.right {
     top: -16px;
 
 }
+
 .ajax-trigger-inner {
     max-width: 355px;
     width: 100%;
 }
+
+.projects-feed-area{
+	background: url('images/feed-area-bg.png') no-repeat center top;
+	background-size: cover;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.projects-feed-area .feed-header{
+	float: right;
+	background: url('images/feed-header-bg.png')no-repeat;
+	background-size: cover;
+}
+
+.projects-feed-area h2{
+	font-size: 30px;
+	color: #FFF;
+	text-transform: uppercase;
+	text-align: right;
+}
+
+.projects-feed-area .sliding-area{
+    padding-left: 3em;
+    padding-right: 0;
+    margin-top: 4em;
+}
+
+.sliding-news .projects-feed-list a.feed-title{
+	font-weight: 400;
+	font-size: 23px;
+	color: #FFF;
+}
+
+.sliding-news .projects-feed-list a.feed-title:hover{
+  color: #009798;
+  transition: all 0.5s ease;
+  text-decoration: none;
+}
+
+.sliding-news .projects-feed-list{
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.sliding-news .projects-feed-list:hover{
+  background: url('images/feed-hover_03.png') repeat;
+  transition: all 0.5s ease;
+  text-decoration: none;
+}
+
+.sliding-news .project-content p{
+  font-size: 13px;
+  line-height: 1.5em;
+}
+
 /* ======= */
 .acf-map {
 	width: 100%;

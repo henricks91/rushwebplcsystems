@@ -37,6 +37,7 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" type="text/javascript"></script>
 	<script src="<?php bloginfo("template_directory"); ?>/js/jquery.meanmenu.min.js" type="text/javascript"></script>
 	<script src="<?php bloginfo("template_directory"); ?>/js/vendor/jquery.bpopup.min.js" type="text/javascript"></script>
+	<script src="<?php bloginfo("template_directory"); ?>/js/jquery.bootstrap.newsbox.min.js" type="text/javascript"></script>
 
 	<!-- end google font -->
 
