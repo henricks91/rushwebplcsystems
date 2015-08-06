@@ -22,5 +22,7 @@ jQuery(document).ready(function($) {
 			//console.log(this);
 		}
     });
+	
+	$('#mini1, #mini2, #mini3, #mini4, #mini5').cycle();
 
 });

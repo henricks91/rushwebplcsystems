@@ -4,6 +4,8 @@ Template Name: Product with AJAX
 */
 
 get_header(); ?>
+	<div class="hidden-container container">
+	</div>
 <div id="main-content" class="page-ajax">
 	<div class="main-banner">
 		<?php echo do_shortcode('[layerslider id="1"]'); ?>
@@ -36,22 +38,22 @@ get_header(); ?>
 				</div>
 			</div>
 
-				
-
-			<div class="col-lg-5 col-md-5 col-sm-5 col-xs-12" id="ajax-content">
+			<div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 projects-feed-area" id="ajax-content">
+				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 feed-header">
+					<h2>Projects</h2>
+				</div>
 				<?php if (have_posts()) { ?>
-					<div class="col-xs-12">
-						
-						<ul>
+					<div class="col-xs-12 sliding-area">
+						<ul class="sliding-news">
 						<!-- start -->
 							 <?php
-								$query = new WP_Query(array('post_type' => 'products', '&meta_query' => array( array( 'key' => '_is_featured_news','&value' => '1' ))));
+								$query = new WP_Query(array('post_type' => 'project', '&meta_query' => array( array( 'key' => '_is_featured_news','&value' => '1' ))));
 									while ($query->have_posts()) : $query->the_post();
 								 ?>
 								<li class="projects-feed-list">
-									<p><a href="<?php the_permalink() ?>"/><?php the_title(); ?></a></p>
+									<p><a href="<?php the_permalink() ?>" class="feed-title"><?php the_title(); ?></a></p>
 									<div class="project-content">
-										<p><?php echo news_limit_characters(get_the_content(), 20) . '...'; ?></p>
+										<p><?php echo news_limit_characters(get_the_content(), 100) . '...'; ?></p>
 									</div>
 								</li>
 									<?php $i++;

@@ -140,6 +140,66 @@ div#logo {
 	display: none;
 }
 
+.ls-active .ls-s-1{
+	left: 0 !important;
+	right: 0 !important;
+	margin: 0 auto !important;
+}
+
+.main-banner .minis-wrapper{
+	display: table;
+	min-height: 300px;
+	float: none;
+}
+
+.main-banner .minis-wrapper .minis{
+	display: table-cell;
+	vertical-align: middle;
+	float: none;
+}
+
+.main-banner .minis .mini-slide{
+	float: none;
+	display: inline-block;
+}
+
+.main-banner .minis .mini-slide:nth-of-type(even){
+	position: relative;
+	top: -3em;
+}
+
+.main-banner .minis .mini-slide:nth-of-type(3){
+	position: relative;
+	top: -8em;
+}
+
+.main-banner .minis img{
+	display: block;
+	max-width: 100% !important;
+}
+
+.main-banner .minis .mini-slide img{
+	width: 70%;
+	margin: 0 auto !important;
+	-webkit-box-shadow: 2px 2px 20px 10px rgba(255,255,255,.6), inset 2px 2px 20px 10px rgba(255,255,255,1) !important;
+	-moz-box-shadow: 2px 2px 20px 10px rgba(255,255,255,.6), inset 2px 2px 20px 10px rgba(255,255,255,1) !important;
+	box-shadow: 2px 2px 20px 10px rgba(255,255,255,.6), inset 2px 2px 20px 10px rgba(255,255,255,1) !important;
+	background: -moz-linear-gradient(top, rgba(255,255,255,0.7) 0%, rgba(255,255,255,.1) 100%) !important;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.7)), color-stop(100%,rgba(255,255,255,.1))) !important;
+	background: linear-gradient(top, rgba(255,255,255,0.7) 0%,rgba(255,255,255,.1) 100%) !important;
+	-webkit-border-radius: 1em !important;
+	-moz-border-radius:  1em !important;
+	border-radius:  1em !important;
+	opacity: 0.8;
+	-moz-opacity: 0.8;
+	-webkit-opacity: 0.8;
+	
+}
+
+html * .ls-container img, body * .ls-container img, #ls-global * .ls-container img{
+	max-width: 100% !important;
+}
+
 .home-tagline{
   background: url(images/bottom-latest-bg.jpg) no-repeat;
   background-size: cover;
@@ -285,6 +345,11 @@ a.post-link.right {
     text-align: center;
     right: 0px;
     top: -16px;
+
+}
+
+a.post-link:hover, a.post-link:active {
+    background: url('images/mission-button-active.png') no-repeat bottom center;
 
 }
 
