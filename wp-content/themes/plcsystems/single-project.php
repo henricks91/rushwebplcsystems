@@ -3,6 +3,9 @@
 get_header(); ?>
 
 <div id="main-content">
+	<div class="main-banner">
+		<?php echo do_shortcode('[layerslider id="1"]'); ?>
+	</div><!--End of main banner-->
 	<div class="container content-area">
 		<div class="row">
 			<div class="col-md-12 main-content-inner">

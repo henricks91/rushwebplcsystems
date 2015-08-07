@@ -274,6 +274,7 @@ p.date {
 }
 .content-area {
     margin: 30px auto 0 auto;
+	padding-bottom: 2em;
 }
 .fullwidth article.post h1 {
     text-align: center;
