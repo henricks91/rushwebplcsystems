@@ -1,12 +1,12 @@
 <?php
 /*
-Template Name: Product with AJAX
+Template Name: Page With Ajax For Products
 */
 
 get_header(); ?>
 	<div class="hidden-container container">
 	</div>
-<div id="main-content" class="page-ajax">
+<div id="main-content" class="page-ajax prod-serv">
 	<div class="main-banner">
 		<?php echo do_shortcode('[layerslider id="1"]'); ?>
 	</div><!--End of main banner-->
@@ -26,10 +26,16 @@ get_header(); ?>
 				if( $posts ): ?>
 				    <div class="ajax-trigger-inner">
 				    <?php foreach( $posts as $post): // variable must be called $post (IMPORTANT) ?>
-				        <?php setup_postdata($post); ?>
+				        <?php setup_postdata($post); 
+				        $terms = get_the_terms($post->ID, 'product-types');
+				        ?>
 				        <div class="ajax-link-wrapper">
-				            <a href="<?php the_permalink(); ?>" class="post-link left"><?php the_title(); ?></a>
-				            <a href="<?php the_permalink(); ?>" class="post-link right"></a>
+				        	<?php foreach ( $terms as $term ) { ?>
+				            <a href="<?php the_permalink(); ?>" class="post-link left"><?php 
+				            	echo $term->name;
+				             ?></a>
+				             <?php } ?>
+				            <a href="<?php the_permalink(); ?>" class="post-link right"><?php the_title(); ?></a>
 				        </div>
 				    <?php endforeach; ?>
 				    </div>

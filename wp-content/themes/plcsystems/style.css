@@ -340,12 +340,15 @@ a.post-link.right {
     display: inline-block;
     position: absolute;
     background: url('images/mission-button.png') no-repeat bottom center;
-    width: 40px;
-    height: 34px;
+    width: 65px;
     text-align: center;
-    right: 0px;
-    top: -16px;
-
+    right: -15px;
+    top: -60px;
+    padding-bottom: 40px;
+    color: #fff;
+}
+.page-ajax.company a.post-link.right{
+  top: -23px;
 }
 
 a.post-link:hover, a.post-link:active {
@@ -378,10 +381,10 @@ a.post-link:hover, a.post-link:active {
 	text-align: right;
 }
 
-.projects-feed-area .sliding-area{
-    padding-left: 3em;
+.projects-feed-area .sliding-area {
+    padding-left: 65px;
     padding-right: 0;
-    margin-top: 4em;
+    margin-top: 45px;
 }
 
 .sliding-news .projects-feed-list a.feed-title{

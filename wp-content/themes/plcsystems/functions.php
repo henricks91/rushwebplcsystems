@@ -126,6 +126,43 @@
 		));
 	}
 	
+	//create custom post types for Services
+	add_action("init", "add_service_post_types");
+	function add_service_post_types() {
+		//the practice area type
+		$labels = array(
+			"name" => _x("Service", "post type general name"),
+			"singular_name" => _x("Service", "post type singular name"),
+			"add_new" => _x("Add New Service", "practice area"),
+			"add_new_item" => __("Add Service"),
+			"edit_item" => __("Edit Service"),
+			"new_item" => __("New Services"),
+			"all_items" => __("All Services"),
+			"view_item" => __("View Service"),
+			"search_items" => __("Search Services"),
+			"not_found" =>  __("No Services found"),
+			"not_found_in_trash" => __("No Services found in Trash"), 
+			"parent_item_colon" => "",
+			"menu_name" => "Services"
+		);
+		$args = array(
+			"labels" => $labels,
+			"description" => "",
+			"public" => true,
+			"rewrite" => array("slug"=>"service"),
+			"has_archive" => true, 
+			"menu_position" => 5,
+			"supports" => array("title","editor","revisions")
+		); 
+		register_post_type("service",$args);
+		register_taxonomy("service-types","service", array(
+			"hierarchical" => true,
+			"label" => __("Service Type"),
+			"query_var" => true,
+			"rewrite" => array("slug" => "service-type"),
+		));
+	}
+
 	// projects feed jordan start
 	// products feed
 	//create custom post types for products feed
