@@ -179,7 +179,7 @@ div#logo {
 }
 
 .main-banner .minis .mini-slide img{
-	width: 70%;
+	width: 100%;
 	margin: 0 auto !important;
 	-webkit-box-shadow: 2px 2px 20px 10px rgba(255,255,255,.6), inset 2px 2px 20px 10px rgba(255,255,255,1) !important;
 	-moz-box-shadow: 2px 2px 20px 10px rgba(255,255,255,.6), inset 2px 2px 20px 10px rgba(255,255,255,1) !important;
@@ -501,7 +501,13 @@ footer#footer {
 	top: -5px;
 }
 
-.button.b-close span{
+.button.b-close2{
+	position: absolute;
+	right: -10px;
+	top: -5px;
+}
+
+.button.b-close span, .button.b-close2 span{
 	background: #FFF;
 	font-weight: 700;
 	padding: 6px;
