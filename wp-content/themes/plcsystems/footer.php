@@ -19,6 +19,11 @@
 			</div>
     	</div><!--END GRID CONTAINER-->
      </footer>
+     <div class="site-created">
+     	<div class="container">
+     		<p>Website Build by <a href="http://www.rushwebservices.com" target="_blank">Rush Web Services Inc.</a></p>
+     	</div>
+     </div>
 
 <script type="text/javascript">
 jQuery(document).ready(function($) {
