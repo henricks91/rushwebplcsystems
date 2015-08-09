@@ -38,7 +38,7 @@
 	<script src="<?php bloginfo("template_directory"); ?>/js/jquery.meanmenu.min.js" type="text/javascript"></script>
 	<script src="<?php bloginfo("template_directory"); ?>/js/vendor/jquery.bpopup.min.js" type="text/javascript"></script>
 	<script src="<?php bloginfo("template_directory"); ?>/js/jquery.bootstrap.newsbox.min.js" type="text/javascript"></script>
-	<script src="<?php bloginfo("template_directory"); ?>/js/jquery.cycle.lite.js" type="text/javascript"></script>
+	<script src="<?php bloginfo("template_directory"); ?>/js/jquery.cycle.all.js" type="text/javascript"></script>
 
 	<!-- end google font -->
 

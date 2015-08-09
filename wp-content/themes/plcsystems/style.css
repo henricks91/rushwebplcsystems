@@ -163,14 +163,50 @@ div#logo {
 	display: inline-block;
 }
 
+.main-banner .minis .mini-slide:nth-of-type(1) img{
+  width: 85%;
+}
+
+.main-banner .minis .mini-slide:nth-of-type(2) img{
+  width: 92%;
+}
+
+.main-banner .minis .mini-slide:nth-of-type(4) img{
+  width: 85%;
+}
+
+.main-banner .minis .mini-slide:nth-of-type(5) img{
+  width: 95%;
+}
+
+
+
+.main-banner .minis .mini-slide:nth-of-type(1) img, .main-banner .minis .mini-slide:nth-of-type(5) img{
+  opacity: 0.7;
+}
+
 .main-banner .minis .mini-slide:nth-of-type(even){
-	position: relative;
-	top: -3em;
+  opacity: 0.9;
+}
+
+.main-banner .minis .mini-slide:nth-of-type(1), .main-banner .minis .mini-slide:nth-of-type(5){
+  position: relative;
+  top: -6em;
+}
+
+.main-banner .minis .mini-slide:nth-of-type(2){
+  position: relative;
+  top: 0em;
 }
 
 .main-banner .minis .mini-slide:nth-of-type(3){
 	position: relative;
 	top: -8em;
+}
+
+.main-banner .minis .mini-slide:nth-of-type(4){
+  position: relative;
+  top: -2em;
 }
 
 .main-banner .minis img{

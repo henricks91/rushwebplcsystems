@@ -23,6 +23,46 @@ jQuery(document).ready(function($) {
 		}
     });
 	
-	$('#mini1, #mini2, #mini3, #mini4, #mini5').cycle();
+	//$('#mini1, #mini2, #mini3, #mini4, #mini5').cycle();
+
+	$('#mini1').cycle({
+		delay: -2000
+	});
+
+	$('#mini2').cycle({
+		delay: -3000
+	});
+
+	$('#mini3').cycle({
+		delay: -4000
+	});
+
+	$('#mini4').cycle({
+		delay: -2000
+	});
+
+	$('#mini5').cycle({
+		delay: -3000
+	});
+
+	$('#mini6').cycle({
+		delay: -2000
+	});
+
+	$('#mini7').cycle({
+		delay: -3000
+	});
+
+	$('#mini8').cycle({
+		delay: -4000
+	});
+
+	$('#mini9').cycle({
+		delay: -2000
+	});
+
+	$('#mini10').cycle({
+		delay: -3000
+	});
 
 });
