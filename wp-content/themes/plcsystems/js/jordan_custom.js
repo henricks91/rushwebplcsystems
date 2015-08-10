@@ -1,8 +1,8 @@
 jQuery(document).ready(function($) {
 	
 	$('.post-link').click(function(e){
-		var post_link = $(this).attr("href");
 		e.preventDefault();
+		var post_link = $(this).attr("data-href");
 		
 		$('.hidden-container').bPopup({
             contentContainer:'.hidden-container',
@@ -10,7 +10,7 @@ jQuery(document).ready(function($) {
         });
 		
 	});
-	
+
 	$(".sliding-news").bootstrapNews({
 		newsPerPage: 6,
 		autoplay: true,
@@ -66,3 +66,11 @@ jQuery(document).ready(function($) {
 	});
 
 });
+
+(function($){
+   $(document).ajaxComplete(function() {
+     if($('.target-content .row .product-image-area').find('img').length == 0 ){
+		$('.target-content .row .product-descriptions-area').css('width','100%');
+	}
+   });
+})(jQuery);

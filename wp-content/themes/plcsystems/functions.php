@@ -115,7 +115,7 @@
 			"rewrite" => array("slug"=>"product"),
 			"has_archive" => true, 
 			"menu_position" => 5,
-			"supports" => array("title","editor","revisions")
+			"supports"	=>	array("title", "editor","page-attributes","thumbnail")
 		); 
 		register_post_type("product",$args);
 		register_taxonomy("product-types","product", array(
@@ -123,6 +123,7 @@
 			"label" => __("Product Type"),
 			"query_var" => true,
 			"rewrite" => array("slug" => "product-type"),
+			"supports"	=>	array("title", "editor","page-attributes","thumbnail")
 		));
 	}
 	
@@ -152,7 +153,7 @@
 			"rewrite" => array("slug"=>"service"),
 			"has_archive" => true, 
 			"menu_position" => 5,
-			"supports" => array("title","editor","revisions")
+			"supports"	=>	array("title", "editor","page-attributes","thumbnail")
 		); 
 		register_post_type("service",$args);
 		register_taxonomy("service-types","service", array(
@@ -160,6 +161,7 @@
 			"label" => __("Service Type"),
 			"query_var" => true,
 			"rewrite" => array("slug" => "service-type"),
+			"supports"	=>	array("title", "editor","page-attributes","thumbnail")
 		));
 	}
 
@@ -191,7 +193,7 @@
 			"rewrite" => array("slug"=>"projects"),
 			"has_archive" => true, 
 			"menu_position" => 5,
-			"supports" => array("title","editor","revisions")
+			"supports"	=>	array("title", "editor","page-attributes","thumbnail")
 		); 
 		register_post_type("project",$args);
 		register_taxonomy("project-types","project", array(
@@ -199,6 +201,7 @@
 			"label" => __("Project Type"),
 			"query_var" => true,
 			"rewrite" => array("slug" => "project-type"),
+			"supports"	=>	array("title", "editor","page-attributes","thumbnail")
 		));
 	}
 	// projects feed jordan end
@@ -271,7 +274,8 @@
 		}
 		
 /*============Adds Excerpt to Pages==========*/
-add_theme_support( 'post-thumbnails' ); 
+// add_theme_support( 'post-thumbnails' );
+add_theme_support( 'post-thumbnails', array( 'post', 'page', 'article', 'project', 'product', 'service' ) ); 
 add_image_size( 'industryicon', 64, 64, true );
 
 add_action( 'init', 'my_add_excerpts_to_pages' );

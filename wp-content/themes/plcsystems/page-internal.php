@@ -28,8 +28,8 @@ get_header(); ?>
 				    <?php foreach( $posts as $post): // variable must be called $post (IMPORTANT) ?>
 				        <?php setup_postdata($post); ?>
 				        <div class="ajax-link-wrapper">
-				            <a href="<?php the_permalink(); ?>" class="post-link left"><?php the_title(); ?></a>
-				            <a href="<?php the_permalink(); ?>" class="post-link right"></a>
+				            <a href="javascript:;" data-href="<?php the_permalink(); ?>" class="post-link left"><?php the_title(); ?></a>
+				            <a href="javascript:;" data-href="<?php the_permalink(); ?>" class="post-link right"></a>
 				        </div>
 				    <?php endforeach; ?>
 				    </div>
@@ -44,22 +44,7 @@ get_header(); ?>
 				</div>
 				<?php if (have_posts()) { ?>
 					<div class="col-xs-12 sliding-area">
-						<ul class="sliding-news">
-						<!-- start -->
-							 <?php
-								$query = new WP_Query(array('post_type' => 'project', '&meta_query' => array( array( 'key' => '_is_featured_news','&value' => '1' ))));
-									while ($query->have_posts()) : $query->the_post();
-								 ?>
-								<li class="projects-feed-list">
-									<p><a href="<?php the_permalink() ?>" class="feed-title"><?php the_title(); ?></a></p>
-									<div class="project-content">
-										<p><?php echo news_limit_characters(get_the_content(), 100) . '...'; ?></p>
-									</div>
-								</li>
-									<?php $i++;
-								endwhile; ?>
-							<!-- end loop -->
-							</ul>
+						<?php get_template_part( 'projectfeeds' ); ?>
 						</div>
 						<?php
 							wp_reset_query(); // end query 

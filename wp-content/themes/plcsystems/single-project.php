@@ -16,7 +16,14 @@ get_header(); ?>
 					<?php while (have_posts()) { the_post(); ?>
 						<article class="post target-content">
 							<h1><?php the_title(); ?></h1>
-							<?php the_content(); ?>
+							<div class="row">
+								<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+									<?php the_content(); ?>
+								</div>
+								<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+									<?php the_post_thumbnail(); ?>
+								</div>
+							</div>
 						</article>
 					<?php } ?>
 				<?php } else { ?>
