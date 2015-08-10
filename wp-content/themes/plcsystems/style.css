@@ -157,6 +157,7 @@ div#logo {
 	display: table-cell;
 	vertical-align: middle;
 	float: none;
+  padding-top: 30px;
 }
 
 .main-banner .minis .mini-slide{
