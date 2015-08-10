@@ -150,6 +150,7 @@ div#logo {
 	display: table;
 	min-height: 300px;
 	float: none;
+  height: 300px;
 }
 
 .main-banner .minis-wrapper .minis{
