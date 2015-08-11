@@ -45,7 +45,7 @@ get_header(); ?>
 			</div>
 
 			<div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 projects-feed-area" id="ajax-content">
-				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 feed-header">
+				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 feed-header">
 					<h2>Projects</h2>
 				</div>
 				<?php if (have_posts()) { ?>

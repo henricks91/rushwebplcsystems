@@ -12,10 +12,10 @@
 		<li class="projects-feed-list">
 			<table class="table">
 				<tr>
-					<td class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+					<td class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
 						<a href="<?php the_permalink() ?>" title="<?php the_title(); ?>"><?php the_post_thumbnail(); ?></a>
 					</td>
-					<td class="col-lg-8 col-md-8 col-sm-3 col-xs-12">
+					<td class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
 						<p><a href="<?php the_permalink() ?>" class="feed-title"><?php the_title(); ?></a></p>
 						<div class="project-content">
 							<p><?php echo news_limit_characters(get_the_content(), 100) . '...'; ?></p>

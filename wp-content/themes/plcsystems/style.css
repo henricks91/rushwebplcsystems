@@ -314,6 +314,19 @@ p.date {
     margin: 30px auto 0 auto;
 	padding-bottom: 2em;
 }
+
+.content-area p{
+	color: #FFF;
+}
+
+.content-area a{
+	color: #009798;
+}
+
+.content-area a:hover{
+	color: #fff;
+}
+
 .fullwidth article.post h1 {
     text-align: center;
     margin-bottom: 15px;
@@ -563,6 +576,10 @@ footer#footer {
 
 /* CONTENT POPUP */
 
+.target-content a{
+	text-decoration: underline;
+}
+
 .hidden-container .target-content{
 	padding: 1em;
 	/* overflow-y: scroll;
@@ -578,6 +595,7 @@ footer#footer {
 	z-index: 3200;
 	margin: 0 auto;
 	background: #009798;
+	overflow-y: scroll;
 }
 
 @keyframes spin {
@@ -628,5 +646,35 @@ footer#footer {
 }
 
 .hidden-container h1, .hidden-container h2 , .hidden-container h3, .hidden-container h4, .hidden-container h5, .hidden-container h6, .hidden-container p, .hidden-container li, .hidden-container a{
+	color: #FFF;
+}
+
+/* 404 */
+
+article.not-found-page {
+	padding: 2em 15px;
+}
+
+.not-found-page h2{
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 30px;
+	font-weight: 700;
+	margin: 15px 0;
+}
+
+.not-found-page h3{
+	text-align: center;
+	font-size: 18px;
+	color: #FFF;
+	font-weight: 400;
+}
+
+.not-found-page ul{
+	list-style-type: square;
+	padding-left: 2em;
+}
+
+.not-found-page ul li{
 	color: #FFF;
 }
