@@ -272,7 +272,7 @@ html * .ls-container img, body * .ls-container img, #ls-global * .ls-container i
   margin-bottom: 40px;
 }
 .latest-image img {
-  max-width: 230px;
+  max-width: 230px !important;
   height: auto;
   margin-left: -50px;
 }
