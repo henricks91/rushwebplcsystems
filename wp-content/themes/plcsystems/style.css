@@ -352,7 +352,7 @@ p.date{
 
 /*=========INTERNAL PAGES========*/
 #main-content{
-	background: url('images/content-bg_02.png') no-repeat top center;
+	background: url('images/internal-bg_02.jpg') no-repeat top center;
 	background-size: cover;
 }
 
@@ -595,7 +595,7 @@ footer#footer {
 	z-index: 3200;
 	margin: 0 auto;
 	background: #009798;
-	overflow-y: scroll;
+	/* overflow-y: scroll; */
 }
 
 @keyframes spin {

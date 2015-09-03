@@ -194,6 +194,9 @@ $(document).ready(function(){
 					<?php echo $_address ?>
 			</div>
 			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+				<?php echo do_shortcode('[layerslider id="2"]'); ?>
+			</div>
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 				<?php 
 					$location = get_field('_plc_google_map');
 					if( !empty($location) ):

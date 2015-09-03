@@ -15,19 +15,18 @@ get_header(); ?>
 			} ?>
 			<?php if (have_posts()) { ?>
 				<?php while (have_posts()) { the_post(); ?>
-					<article class="post col-md-9">
+					<article class="post col-md-12">
 						<h1><?php the_title(); ?></h1>
 						<?php the_content(''); ?>
 					</article>
 				<?php } ?>
 			<?php } else { ?>
-				<article class="page col-md-9">
+				<article class="page col-md-12">
 					<h1>Nothing Found</h1>
 					<p>Sorry, but you are looking for something that isn't here.</p>
 					<p><a href="<?php echo get_option("home"); ?>">Return to the homepage</a></p>
 				</article>
 			<?php } ?>
-			<?php get_sidebar(); ?>
 		</div>
 	</div>
 </div><!--End of main content-->

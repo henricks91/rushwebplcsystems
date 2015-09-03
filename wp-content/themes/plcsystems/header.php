@@ -63,7 +63,7 @@
 		<div class="row">
 			<div id="logo" class="col-md-4">
 	            <a href="<?php bloginfo("url"); ?>">
-	                <img src="<?php bloginfo("template_directory"); ?>/images/logo.png" alt="<?php bloginfo("name"); ?>" />
+	                <img src="<?php bloginfo("template_directory"); ?>/images/logo.gif" alt="<?php bloginfo("name"); ?>" />
 	            </a>
 	        </div>
 	        <nav id="main-nav" class="col-md-8" role="navigation">
